@@ -24,6 +24,11 @@ import java.util.Map;
 class TwoSumClass {
     private HashMap<Integer, Integer> nums = new HashMap<>();
 
+    public static void main(String[] a) {
+        TwoSumClass s = new TwoSumClass();
+        s.run();
+    }
+
     //O(1) add
     void add(int number) {
         if (nums.get(number) == null)
@@ -50,11 +55,6 @@ class TwoSumClass {
         add(5);
         System.out.println(find(4)); // -> true
         System.out.println(find(7)); // -> false
-    }
-
-    public static void main(String[] a) {
-        TwoSumClass s = new TwoSumClass();
-        s.run();
     }
 
 }

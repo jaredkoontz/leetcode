@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by leicao on 11/10/15.
@@ -26,7 +26,7 @@ public class binarySearchTreeIteratorTest {
         inputs.add(t0);
 
         int[][] results = {
-                {1,6,10,11,12}
+                {1, 6, 10, 11, 12}
         };
 
         for (int i = 0; i < results.length; i++) {

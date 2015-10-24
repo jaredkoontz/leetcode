@@ -4,7 +4,6 @@
 // Date   : 2015-10-06
 
 /**********************************************************************************
- *
  * Given a binary tree, determine if it is a valid binary search tree (BST).
  *
  * Assume a BST is defined as follows:
@@ -22,30 +21,29 @@
  *
  * Here's an example:
  *
- *    1
- *   / \
- *  2   3
- *     /
- *    4
- *     \
- *      5
+ * 1
+ * / \
+ * 2   3
+ * /
+ * 4
+ * \
+ * 5
  *
  * The above binary tree is serialized as "{1,2,3,#,#,4,#,#,5}".
- *
- *
  **********************************************************************************/
 
 package validateBinarySearchTree;
 
 public class validateBinarySearchTree {
-    public boolean isValidBST(TreeNode root) {
-        return isBSTTraversal(root) && isBSTDivideAndConquer(root);
-    }
-
     // Solution 1: Traversal
     // The inorder sequence of a BST is a sorted ascending list
     private int lastValue = 0; // the init value of it doesn't matter.
     private boolean firstNode = true;
+
+    public boolean isValidBST(TreeNode root) {
+        return isBSTTraversal(root) && isBSTDivideAndConquer(root);
+    }
+
     public boolean isBSTTraversal(TreeNode root) {
         if (root == null) {
             return true;
@@ -72,18 +70,6 @@ public class validateBinarySearchTree {
 
     }
 
-    // Solution 2: divide && conquer
-    private class Result {
-        int min;
-        int max;
-        boolean isBST;
-        Result(int min, int max, boolean isBST) {
-            this.min = min;
-            this.max = max;
-            this.isBST = isBST;
-        }
-    }
-
     public boolean isBSTDivideAndConquer(TreeNode root) {
         return isBSTHelper(root).isBST;
     }
@@ -101,7 +87,7 @@ public class validateBinarySearchTree {
         Result right = isBSTHelper(root.right);
 
         if (!left.isBST || !right.isBST) {
-            return new Result(0,0, false);
+            return new Result(0, 0, false);
         }
 
         // For non-leaf node
@@ -112,5 +98,18 @@ public class validateBinarySearchTree {
 
         return new Result(Math.min(left.min, root.val),
                 Math.max(right.max, root.val), true);
+    }
+
+    // Solution 2: divide && conquer
+    private class Result {
+        int min;
+        int max;
+        boolean isBST;
+
+        Result(int min, int max, boolean isBST) {
+            this.min = min;
+            this.max = max;
+            this.isBST = isBST;
+        }
     }
 }

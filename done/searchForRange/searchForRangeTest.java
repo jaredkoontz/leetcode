@@ -2,7 +2,7 @@ package searchForRange;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 /**
  * Created by leicao on 3/10/15.
@@ -13,11 +13,11 @@ public class searchForRangeTest {
     public void testSearchRange() throws Exception {
 
         int[][] inputs = {
-            {5, 7, 7, 8, 8, 10}
+                {5, 7, 7, 8, 8, 10}
         };
         int[] targets = {8};
         int[][] results = {
-            {3,4}
+                {3, 4}
         };
 
         searchForRange s = new searchForRange();

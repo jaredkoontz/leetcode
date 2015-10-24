@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by leicao on 7/10/15.
@@ -46,7 +46,7 @@ public class inorderSuccessorInBSTTest {
             inorderSuccessorInBST finder = new inorderSuccessorInBST();
             TreeNode node = finder.inorderSuccessor(inputes.get(i), targets.get(i));
             System.out.println(node);
-            boolean result = node == results.get(i)  || node.val == results.get(i).val;
+            boolean result = node == results.get(i) || node.val == results.get(i).val;
             assertTrue(result);
         }
     }

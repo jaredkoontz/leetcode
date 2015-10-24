@@ -2,7 +2,7 @@ package uniquePaths;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by leicao on 11/10/15.
@@ -12,11 +12,11 @@ public class uniquePathsIITest {
     @Test
     public void testUniquePathsWithObstacles() throws Exception {
         int[][][] inputs = {
-            {
-                {0,0,0},
-                {0,1,0},
-                {0,0,0},
-            }
+                {
+                        {0, 0, 0},
+                        {0, 1, 0},
+                        {0, 0, 0},
+                }
         };
         int[] results = {2};
         for (int i = 0; i < inputs.length; i++) {

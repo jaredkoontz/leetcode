@@ -4,7 +4,6 @@ package sumRootToLeafNumber;
 // Date   : 2014-09-20 / 10-23-2015
 
 /**********************************************************************************
- *
  * Given a binary tree containing digits from 0-9 only, each root-to-leaf path could represent a number.
  * An example is the root-to-leaf path 1->2->3 which represents the number 123.
  *
@@ -12,16 +11,14 @@ package sumRootToLeafNumber;
  *
  * For example,
  *
- *     1
- *    / \
- *   2   3
+ * 1
+ * / \
+ * 2   3
  *
  * The root-to-leaf path 1->2 represents the number 12.
  * The root-to-leaf path 1->3 represents the number 13.
  *
  * Return the sum = 12 + 13 = 25.
- *
- *
  **********************************************************************************/
 
 import common.TreeNode;
@@ -29,10 +26,10 @@ import common.TreeNode;
 /**
  * Definition for binary tree
  * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * int val;
+ * TreeNode *left;
+ * TreeNode *right;
+ * TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
 

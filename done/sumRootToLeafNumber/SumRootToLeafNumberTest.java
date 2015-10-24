@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class SumRootToLeafNumberTest {
 
     @Test
-    public void testSum(){
+    public void testSum() {
         ArrayList<TreeNode> inputs = new ArrayList<>();
         boolean[] results = {false, false};
         TreeNode n0 = new TreeNode(0);

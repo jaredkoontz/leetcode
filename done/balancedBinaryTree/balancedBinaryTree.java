@@ -4,7 +4,6 @@
 // Date   : 2015-10-07
 
 /**********************************************************************************
- *
  * Given a binary tree, determine if it is height-balanced.
  *
  * For this problem, a height-balanced binary tree is defined as a binary tree in which
@@ -29,15 +28,6 @@ public class balancedBinaryTree {
         return helper(root, 0).isBalanced;
     }
 
-    // This is not needed. Can just check the depth
-    private class Result {
-        boolean isBalanced;
-        int height;
-        Result(boolean isBalanced, int height) {
-            this.isBalanced = isBalanced;
-            this.height = height;
-        }
-    }
     private Result helper(TreeNode root, int depth) {
         if (root == null) {
             return new Result(true, depth);
@@ -53,5 +43,16 @@ public class balancedBinaryTree {
             return new Result(false, 0);
         }
         return new Result(true, Math.max(left.height, right.height));
+    }
+
+    // This is not needed. Can just check the depth
+    private class Result {
+        boolean isBalanced;
+        int height;
+
+        Result(boolean isBalanced, int height) {
+            this.isBalanced = isBalanced;
+            this.height = height;
+        }
     }
 }

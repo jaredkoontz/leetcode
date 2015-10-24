@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by leicao on 5/10/15.
@@ -33,7 +33,7 @@ public class maximumDepthOfBinaryTreeTest {
         ArrayList<TreeNode> inputes = new ArrayList<TreeNode>();
         inputes.add(t0);
         inputes.add(n0);
-        int[] results = {1,3};
+        int[] results = {1, 3};
 
         maximumDepthOfBinaryTree m = new maximumDepthOfBinaryTree();
         for (int i = 0; i < results.length; i++) {

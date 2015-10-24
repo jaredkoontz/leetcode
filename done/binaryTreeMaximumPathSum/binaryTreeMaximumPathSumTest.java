@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by leicao on 8/10/15.
@@ -71,7 +71,6 @@ public class binaryTreeMaximumPathSumTest {
         n6.right = n8;
 
         n7.left = n9;
-
 
 
 //        inputs.add(t0);

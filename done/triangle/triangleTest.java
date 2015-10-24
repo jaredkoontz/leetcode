@@ -2,7 +2,7 @@ package triangle;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by leicao on 15/10/15.
@@ -12,12 +12,12 @@ public class triangleTest {
     @Test
     public void testMinimumTotal() throws Exception {
         int[][][] inputes = {
-            {
-                {2},
-                {3,4},
-                {6,5,7},
-                {4,1,8,3},
-            }
+                {
+                        {2},
+                        {3, 4},
+                        {6, 5, 7},
+                        {4, 1, 8, 3},
+                }
         };
 
         int[] results = {11};

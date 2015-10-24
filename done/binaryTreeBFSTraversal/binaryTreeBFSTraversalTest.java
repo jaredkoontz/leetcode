@@ -13,13 +13,13 @@ import static org.junit.Assert.assertEquals;
 public class binaryTreeBFSTraversalTest {
 
     /**
-     *          0
-     *        /   \
-     *      1      2
-     *     / \      \
-     *   3    4      6
-     *      /
-     *      5
+     * 0
+     * /   \
+     * 1      2
+     * / \      \
+     * 3    4      6
+     * /
+     * 5
      */
     @Test
     public void testPreorderTraversal() throws Exception {
@@ -45,11 +45,11 @@ public class binaryTreeBFSTraversalTest {
         inputes.add(t0);
         inputes.add(n0);
 
-        List<List<Integer>> results = new ArrayList<List<Integer>>(){{
-            add(new ArrayList<Integer>(){{
-                   add(0);
+        List<List<Integer>> results = new ArrayList<List<Integer>>() {{
+            add(new ArrayList<Integer>() {{
+                add(0);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(0);
                 add(1);
                 add(2);

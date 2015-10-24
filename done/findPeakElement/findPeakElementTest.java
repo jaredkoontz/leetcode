@@ -2,7 +2,7 @@ package findPeakElement;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by leicao on 5/10/15.
@@ -12,8 +12,8 @@ public class findPeakElementTest {
     @Test
     public void testFindPeak() throws Exception {
         //* For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.
-        int [][] inputs = {
-            {1,2,3,1}
+        int[][] inputs = {
+                {1, 2, 3, 1}
         };
         int[] results = {2};
 

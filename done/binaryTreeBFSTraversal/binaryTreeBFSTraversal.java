@@ -10,7 +10,7 @@ import java.util.Queue;
  */
 public class binaryTreeBFSTraversal {
     public List<Integer> bfsTraversal(TreeNode root) {
-        List<Integer>  results = new ArrayList<Integer>();
+        List<Integer> results = new ArrayList<Integer>();
         if (root == null) {
             return results;
         }

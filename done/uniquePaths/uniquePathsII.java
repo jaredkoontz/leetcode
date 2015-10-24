@@ -4,7 +4,6 @@
 // Date   : 2015-10-11
 
 /**********************************************************************************
- *
  * Follow up for "Unique Paths":
  *
  * Now consider if some obstacles are added to the grids. How many unique paths would there be?
@@ -15,15 +14,14 @@
  * There is one obstacle in the middle of a 3x3 grid as illustrated below.
  *
  * [
- *   [0,0,0],
- *   [0,1,0],
- *   [0,0,0]
+ * [0,0,0],
+ * [0,1,0],
+ * [0,0,0]
  * ]
  *
  * The total number of unique paths is 2.
  *
  * Note: m and n will be at most 100.
- *
  **********************************************************************************/
 
 package uniquePaths;
@@ -34,7 +32,7 @@ public class uniquePathsII {
      * @return: An integer
      */
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-        if (obstacleGrid.length == 0 || obstacleGrid[0].length ==0) {
+        if (obstacleGrid.length == 0 || obstacleGrid[0].length == 0) {
             return 0;
         }
         if (obstacleGrid[0][0] == 1) {
@@ -64,10 +62,10 @@ public class uniquePathsII {
                 if (obstacleGrid[i][j] == 1) {
                     matrix[i][j] = 0;
                 } else {
-                    matrix[i][j] = matrix[i-1][j] + matrix[i][j-1];
+                    matrix[i][j] = matrix[i - 1][j] + matrix[i][j - 1];
                 }
             }
         }
-        return matrix[m-1][n-1];
+        return matrix[m - 1][n - 1];
     }
 }

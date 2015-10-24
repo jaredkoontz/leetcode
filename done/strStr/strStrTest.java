@@ -1,8 +1,6 @@
 package strStr;
 
-import com.sun.org.apache.xpath.internal.operations.Equals;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by leicao on 2/10/15.
@@ -12,9 +10,9 @@ public class strStrTest {
     @org.junit.Test
     public void testStrStr() throws Exception {
         strStr strStr = new strStr();
-        String[][]  inputs = {
-            {"I am the haystack!","haystack!"},
-            {"I am the haystack!","haytack"},
+        String[][] inputs = {
+                {"I am the haystack!", "haystack!"},
+                {"I am the haystack!", "haytack"},
         };
         int[] outputs = {9, -1};
         for (int i = 0; i < inputs.length; i++) {

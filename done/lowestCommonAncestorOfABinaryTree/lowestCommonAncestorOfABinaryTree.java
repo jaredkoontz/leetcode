@@ -4,7 +4,6 @@
 // Date   : 2015-10-07
 
 /**********************************************************************************
- *
  * Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the
  * tree.
  *
@@ -12,42 +11,36 @@
  * defined between two nodes v and w as the lowest node in T that has both v and w as
  * descendants (where we allow a node to be a descendant of itself).”
  *
- *         _______3______
- *        /              \
- *     ___5__          ___1__
- *    /      \        /      \
- *    6      _2       0       8
- *          /  \
- *          7   4
+ * _______3______
+ * /              \
+ * ___5__          ___1__
+ * /      \        /      \
+ * 6      _2       0       8
+ * /  \
+ * 7   4
  *
  * For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another example
  * is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according
  * to the LCA definition.
- *
- *
- *
  **********************************************************************************/
 
 package lowestCommonAncestorOfABinaryTree;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 /**
  * Definition of TreeNode:
  * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
+ * public int val;
+ * public TreeNode left, right;
+ * public TreeNode(int val) {
+ * this.val = val;
+ * this.left = this.right = null;
+ * }
  * }
  */
 public class lowestCommonAncestorOfABinaryTree {
     /**
      * @param root: The root of the binary search tree.
-     * @param A and B: two nodes in a Binary.
+     * @param A     and B: two nodes in a Binary.
      * @return: Return the least common ancestor(LCA) of the two nodes.
      */
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode A, TreeNode B) {

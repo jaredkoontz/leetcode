@@ -4,7 +4,6 @@
 // Date   : 2015-10-02
 
 /**********************************************************************************
- *
  * Given a collection of integers that might contain duplicates, S, return all possible subsets.
  *
  * Note:
@@ -16,15 +15,13 @@
  * If S = [1,2,2], a solution is:
  *
  * [
- *   [2],
- *   [1],
- *   [1,2,2],
- *   [2,2],
- *   [1,2],
- *   []
+ * [2],
+ * [1],
+ * [1,2,2],
+ * [2,2],
+ * [1,2],
+ * []
  * ]
- *
- *
  **********************************************************************************/
 
 package subsets;
@@ -37,10 +34,11 @@ import java.util.List;
 public class subsetsII {
     /**
      * Leetcode version
+     *
      * @param nums
      * @return
      */
-    public List<List<Integer>> subsetsWithDup(int [] nums) {
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         if (nums == null || nums.length == 0) {
             return result;
@@ -66,6 +64,7 @@ public class subsetsII {
 
     /**
      * Lintcode version
+     *
      * @param S: A set of numbers.
      * @return: A list of lists. All valid subsets.
      */

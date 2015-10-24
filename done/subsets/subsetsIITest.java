@@ -15,32 +15,32 @@ public class subsetsIITest {
     @Test
     public void testSubsetsIILintcode() throws Exception {
 
-        ArrayList<Integer> inputs = new ArrayList<Integer>(){{
+        ArrayList<Integer> inputs = new ArrayList<Integer>() {{
             add(1);
             add(2);
             add(2);
         }};
-        ArrayList<ArrayList<Integer>> outputs = new ArrayList<ArrayList<Integer>>(){{
-            add(new ArrayList<Integer>(){{
+        ArrayList<ArrayList<Integer>> outputs = new ArrayList<ArrayList<Integer>>() {{
+            add(new ArrayList<Integer>() {{
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(1);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(1);
                 add(2);
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(2);
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(1);
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
             }});
         }};
         subsetsII s = new subsetsII();
@@ -53,28 +53,28 @@ public class subsetsIITest {
 
     @Test
     public void testSubsetsIILeetcode() throws Exception {
-        int[] inputs = {1,2,2};
-        List<List<Integer>> outputs = new ArrayList<List<Integer>>(){{
-            add(new ArrayList<Integer>(){{
+        int[] inputs = {1, 2, 2};
+        List<List<Integer>> outputs = new ArrayList<List<Integer>>() {{
+            add(new ArrayList<Integer>() {{
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(1);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(1);
                 add(2);
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(2);
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(1);
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
             }});
         }};
         subsetsII s = new subsetsII();

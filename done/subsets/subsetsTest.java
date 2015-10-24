@@ -3,10 +3,9 @@ package subsets;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by leicao on 2/10/15.
@@ -16,39 +15,39 @@ public class subsetsTest {
     @Test
     public void testSubsets() throws Exception {
 
-        ArrayList<Integer> inputs = new ArrayList<Integer>(){{
+        ArrayList<Integer> inputs = new ArrayList<Integer>() {{
             add(1);
             add(2);
             add(3);
         }};
-        ArrayList<ArrayList<Integer>> outputs = new ArrayList<ArrayList<Integer>>(){{
-            add(new ArrayList<Integer>(){{
+        ArrayList<ArrayList<Integer>> outputs = new ArrayList<ArrayList<Integer>>() {{
+            add(new ArrayList<Integer>() {{
                 add(3);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(1);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(1);
-                add(2);
-                add(3);
-            }});
-            add(new ArrayList<Integer>(){{
-                add(1);
-                add(3);
-            }});
-            add(new ArrayList<Integer>(){{
                 add(2);
                 add(3);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
+                add(1);
+                add(3);
+            }});
+            add(new ArrayList<Integer>() {{
+                add(2);
+                add(3);
+            }});
+            add(new ArrayList<Integer>() {{
                 add(1);
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
             }});
         }};
         subsets s = new subsets();
@@ -61,35 +60,35 @@ public class subsetsTest {
 
     @Test
     public void testSubsets1() throws Exception {
-        int[] inputs = {1,2,3};
-        List<List<Integer>> outputs = new ArrayList<List<Integer>>(){{
-            add(new ArrayList<Integer>(){{
+        int[] inputs = {1, 2, 3};
+        List<List<Integer>> outputs = new ArrayList<List<Integer>>() {{
+            add(new ArrayList<Integer>() {{
                 add(3);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(1);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
                 add(1);
-                add(2);
-                add(3);
-            }});
-            add(new ArrayList<Integer>(){{
-                add(1);
-                add(3);
-            }});
-            add(new ArrayList<Integer>(){{
                 add(2);
                 add(3);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
+                add(1);
+                add(3);
+            }});
+            add(new ArrayList<Integer>() {{
+                add(2);
+                add(3);
+            }});
+            add(new ArrayList<Integer>() {{
                 add(1);
                 add(2);
             }});
-            add(new ArrayList<Integer>(){{
+            add(new ArrayList<Integer>() {{
             }});
         }};
         subsets s = new subsets();

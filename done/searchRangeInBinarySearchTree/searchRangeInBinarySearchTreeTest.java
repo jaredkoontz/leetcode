@@ -3,9 +3,8 @@ package searchRangeInBinarySearchTree;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by leicao on 9/10/15.
@@ -30,11 +29,11 @@ public class searchRangeInBinarySearchTreeTest {
         inputs.add(t1);
 
         int[][] ranges = {
-            {10,22}
+                {10, 22}
         };
 
-        ArrayList<ArrayList<Integer>> results = new ArrayList<ArrayList<Integer>>(){{
-            add(new ArrayList<Integer>(){{
+        ArrayList<ArrayList<Integer>> results = new ArrayList<ArrayList<Integer>>() {{
+            add(new ArrayList<Integer>() {{
                 add(12);
                 add(20);
                 add(22);

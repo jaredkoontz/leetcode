@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by leicao on 8/10/15.
@@ -41,22 +41,22 @@ public class binaryTreeLevelOrderTraversalTest {
 
         inputs.add(t0);
 
-        ArrayList<ArrayList<ArrayList<Integer>>> results = new ArrayList<ArrayList<ArrayList<Integer>>>(){{
-            add(new ArrayList<ArrayList<Integer>>(){{
-                add(new ArrayList<Integer>(){{
-                   add(-15);
+        ArrayList<ArrayList<ArrayList<Integer>>> results = new ArrayList<ArrayList<ArrayList<Integer>>>() {{
+            add(new ArrayList<ArrayList<Integer>>() {{
+                add(new ArrayList<Integer>() {{
+                    add(-15);
                 }});
-                add(new ArrayList<Integer>(){{
+                add(new ArrayList<Integer>() {{
                     add(5);
                     add(6);
                 }});
-                add(new ArrayList<Integer>(){{
+                add(new ArrayList<Integer>() {{
                     add(-8);
                     add(1);
                     add(3);
                     add(9);
                 }});
-                add(new ArrayList<Integer>(){{
+                add(new ArrayList<Integer>() {{
                     add(2);
                     add(6);
                 }});

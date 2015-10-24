@@ -4,7 +4,6 @@
 // Date   : 2015-10-03
 
 /**********************************************************************************
- *
  * Write an efficient algorithm that searches for a value in an m x n matrix.
  * This matrix has the following properties:
  *
@@ -16,13 +15,12 @@
  * Consider the following matrix:
  *
  * [
- *   [1,   3,  5,  7],
- *   [10, 11, 16, 20],
- *   [23, 30, 34, 50]
+ * [1,   3,  5,  7],
+ * [10, 11, 16, 20],
+ * [23, 30, 34, 50]
  * ]
  *
  * Given target = 3, return true.
- *
  **********************************************************************************/
 
 package search2DMatrix;
@@ -31,6 +29,7 @@ public class search2DMatrix {
     int rows = 0;
     int cols = 0;
     int[][] m;
+
     public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
             return false;
@@ -65,6 +64,7 @@ public class search2DMatrix {
 
     /**
      * Get the value of the 2D matrix from the index
+     *
      * @param index
      * @return
      */

@@ -2,7 +2,7 @@ package search2DMatrix;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by leicao on 3/10/15.
@@ -13,12 +13,12 @@ public class search2DMatrixTest {
     public void testSearchMatrix() throws Exception {
         int[][][] inputes = {
                 {
-                        {1,3,5,7},
-                        {10,11,16,20},
-                        {23,30,34,50},
+                        {1, 3, 5, 7},
+                        {10, 11, 16, 20},
+                        {23, 30, 34, 50},
                 },
         };
-        int[] targets =  {3};
+        int[] targets = {3};
         boolean[] outputs = {true};
 
         search2DMatrix s = new search2DMatrix();

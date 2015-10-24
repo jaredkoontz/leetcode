@@ -5,6 +5,7 @@ package firstBadVersion;
  */
 public class VersionControl {
     int firstBadVersion;
+
     boolean isBadVersion(int version) {
         if (version >= firstBadVersion) {
             return true;

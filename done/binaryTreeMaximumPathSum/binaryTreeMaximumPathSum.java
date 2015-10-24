@@ -4,7 +4,6 @@
 // Date   : 2015-10-08
 
 /**********************************************************************************
- *
  * Given a binary tree, find the maximum path sum.
  *
  * For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections.
@@ -15,29 +14,24 @@
  * For example:
  * Given the below binary tree,
  *
- *        1
- *       / \
- *      2   3
+ * 1
+ * / \
+ * 2   3
  *
  * Return 6.
- *
- *
  **********************************************************************************/
 
 package binaryTreeMaximumPathSum;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 /**
  * Definition of TreeNode:
  * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
+ * public int val;
+ * public TreeNode left, right;
+ * public TreeNode(int val) {
+ * this.val = val;
+ * this.left = this.right = null;
+ * }
  * }
  */
 public class binaryTreeMaximumPathSum {
@@ -48,15 +42,6 @@ public class binaryTreeMaximumPathSum {
     public int maxPathSum(TreeNode root) {
         Result r = helper(root);
         return r.sumToLeaf;
-    }
-
-    private class Result {
-        int sumToRoot = 0;
-        int sumToLeaf = 0;
-        Result(int sumToRoot, int sumToLeaf) {
-            this.sumToRoot = sumToRoot;
-            this.sumToLeaf = sumToLeaf;
-        }
     }
 
     // [9,6,-3,null,null,-6,2,null,null,2,null,-6,-6,-6]
@@ -91,5 +76,15 @@ public class binaryTreeMaximumPathSum {
         int max = Math.max(max3, max4);
 
         return new Result(sumToRoot, max);
+    }
+
+    private class Result {
+        int sumToRoot = 0;
+        int sumToLeaf = 0;
+
+        Result(int sumToRoot, int sumToLeaf) {
+            this.sumToRoot = sumToRoot;
+            this.sumToLeaf = sumToLeaf;
+        }
     }
 }

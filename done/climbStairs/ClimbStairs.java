@@ -5,11 +5,9 @@ package climbStairs;
 // Date   : 2014-06-27 / 10/23/15
 
 /**********************************************************************************
- *
  * You are climbing a stair case. It takes n steps to reach to the top.
  *
  * Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
- *
  **********************************************************************************/
 
 public class ClimbStairs {
@@ -36,15 +34,15 @@ public class ClimbStairs {
         matrix[1] = 2;
         // write your code here
         for (int i = 2; i < matrix.length; i++) {
-            matrix[i] = matrix[i-1] + matrix[i-2];
+            matrix[i] = matrix[i - 1] + matrix[i - 2];
         }
-        return matrix[n-1];
+        return matrix[n - 1];
     }
 
     int climbStairs2(int n) {
-        if (n<=3) return n;
-        int a[] = new int[]{2,3};
-        for(int i=4; i<=n; i++){
+        if (n <= 3) return n;
+        int a[] = new int[]{2, 3};
+        for (int i = 4; i <= n; i++) {
             int t = a[0] + a[1];
             a[0] = a[1];
             a[1] = t;
@@ -54,7 +52,7 @@ public class ClimbStairs {
 
     //Time too long
     int climbStairsFoolish(int n) {
-        if (n<=3) return n;
+        if (n <= 3) return n;
         return climbStairsFoolish(n - 1) + climbStairsFoolish(n - 2);
     }
 }

@@ -4,7 +4,6 @@
 // Date   : 2014-10-05
 
 /**********************************************************************************
- *
  * A peak element is an element that is greater than its neighbors.
  *
  * Given an input array where num[i] ≠ num[i+1], find a peak element and return its index.
@@ -19,7 +18,6 @@
  * Your solution should be in logarithmic complexity.
  *
  * Credits:Special thanks to @ts for adding this problem and creating all test cases.
- *
  **********************************************************************************/
 
 package findPeakElement;
