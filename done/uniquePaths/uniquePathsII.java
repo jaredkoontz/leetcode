@@ -26,7 +26,7 @@
  *
  **********************************************************************************/
 
-package dynamicProgramming.uniquePaths;
+package uniquePaths;
 
 public class uniquePathsII {
     /**

@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 /**
  * Created by leicao on 6/10/15.
  */
-public class binaryTreePreorderTraversalTest {
+public class binaryTreePreOrderTraversalTest {
 
     /**
      *          0
@@ -60,7 +60,7 @@ public class binaryTreePreorderTraversalTest {
             }});
         }};
 
-        binaryTreePreorderTraversal b = new binaryTreePreorderTraversal();
+        binaryTreePreOrderTraversal b = new binaryTreePreOrderTraversal();
         for (int i = 0; i < results.size(); i++) {
             List<Integer> r = b.preorderTraversal(inputes.get(i));
             assertEquals(results.get(i), r);

@@ -1,4 +1,4 @@
-package dynamicProgramming.uniquePaths;
+package uniquePaths;
 
 import org.junit.Test;
 

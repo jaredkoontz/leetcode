@@ -1,4 +1,4 @@
-package dynamicProgramming.triangle;
+package triangle;
 
 import org.junit.Test;
 

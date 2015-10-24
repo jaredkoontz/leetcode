@@ -30,7 +30,7 @@ import java.util.List;
 /**
  * Created by leicao on 5/10/15.
  */
-public class binaryTreePreorderTraversal {
+public class binaryTreePreOrderTraversal {
 
     //Version 1: Traverse
     public List<Integer> preorderTraversal(TreeNode root) {

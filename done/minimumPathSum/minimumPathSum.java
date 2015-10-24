@@ -12,7 +12,7 @@
  *
  **********************************************************************************/
 
-package dynamicProgramming.minimumPathSum;
+package minimumPathSum;
 
 public class minimumPathSum {
     /**

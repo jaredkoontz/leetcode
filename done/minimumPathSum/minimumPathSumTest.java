@@ -1,4 +1,4 @@
-package dynamicProgramming.minimumPathSum;
+package minimumPathSum;
 
 import org.junit.Test;
 

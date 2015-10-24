@@ -25,7 +25,7 @@
  *
  **********************************************************************************/
 
-package dynamicProgramming.triangle;
+package triangle;
 
 import java.util.List;
 
