@@ -1,8 +1,6 @@
 package implementTriePrefixTree;
 
-/**
- * Created by jared on 10/23/15.
- */
+//todo
 class TrieNode {
     boolean isEndOfWord;
     TrieNode[] children;

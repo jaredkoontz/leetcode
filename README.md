@@ -8,9 +8,9 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|292|[Nim Game](https://leetcode.com/problems/nim-game/)  | [C++](./algorithms/cpp/nimGame/nimGame.cpp)|Easy|
-|290|[Word Pattern](https://leetcode.com/problems/word-pattern/) | [C++](./algorithms/cpp/wordPattern/WordPattern.cpp)|Easy|
-|287|[Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)  | [C++](./algorithms/cpp/findTheDuplicateNumber/findTheDuplicateNumber.cpp)|Hard|
+|292|[Nim Game](https://leetcode.com/problems/nim-game/)  | [C++](./algorithms/cpp/nimGame/nimGame.cpp),[Java]()|Easy|
+|290|[Word Pattern](https://leetcode.com/problems/word-pattern/) | [C++](./algorithms/cpp/wordPattern/WordPattern.cpp),[Java]()|Easy|
+|287|[Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | [C++](./algorithms/cpp/findTheDuplicateNumber/findTheDuplicateNumber.cpp) , [Java]() |Hard|
 |285|[Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) &hearts; | [Java](./algorithms/java/src/inorderSuccessorInBST/InorderSuccessorInBST.java)|Medium|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)  | [C++](./algorithms/cpp/moveZeroes/moveZeroes.cpp)|Easy|
 |278|[First Bad Version](https://leetcode.com/problems/first-bad-version/)| [C++](./algorithms/cpp/firstBadVersion/FirstBadVersion.cpp), [Java](./algorithms/java/src/firstBadVersion/firstBadVersion.java)|Easy|
@@ -219,7 +219,7 @@ LeetCode
 |30|[Next Permutation](https://oj.leetcode.com/problems/next-permutation/)| [C++](./algorithms/cpp/nextPermutation/nextPermutation.cpp)|Medium|
 |29|[Substring with Concatenation of All Words](https://oj.leetcode.com/problems/substring-with-concatenation-of-all-words/)| [C++](./algorithms/cpp/substringWithConcatenationOfAllWords/substringWithConcatenationOfAllWords.cpp)|Hard|
 |28|[Divide Two Integers](https://oj.leetcode.com/problems/divide-two-integers/)| [C++](./algorithms/cpp/divideTwoInt/divideTwoInt.cpp)|Medium|
-|27|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)| [C++](./algorithms/cpp/strStr/strStr.cpp), [Java](./algorithms/java/src/strStr/strStr.java)|Easy|
+|27|[Implement strStr()](https://oj.leetcode.com/problems/implement-strstr/)| [C++](./algorithms/cpp/strStr/strStr.cpp), [Java](./algorithms/java/strStr/strStr.java)|Easy|
 |26|[Remove Element](https://oj.leetcode.com/problems/remove-element/)| [C++](./algorithms/cpp/removeElement/removeElement.cpp)|Easy|
 |25|[Remove Duplicates from Sorted Array](https://oj.leetcode.com/problems/remove-duplicates-from-sorted-array/)| [C++](./algorithms/cpp/removeDuplicatesFromSortedArray/removeDuplicatesFromSortedArray.cpp)|Easy|
 |24|[Reverse Nodes in k-Group](https://oj.leetcode.com/problems/reverse-nodes-in-k-group/)| [C++](./algorithms/cpp/reverseNodesInKGroup/reverseNodesInKGroup.cpp)|Hard|
@@ -245,7 +245,7 @@ LeetCode
 |4|[Add Two Numbers](https://oj.leetcode.com/problems/add-two-numbers/)| [C++](./algorithms/cpp/addTwoNumbers/addTwoNumbers.cpp)|Medium|
 |3|[Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/)| [C++](./algorithms/cpp/longestSubstringWithoutRepeatingCharacters/longestSubstringWithoutRepeatingCharacters.cpp)|Medium|
 |2|[Median of Two Sorted Arrays](https://oj.leetcode.com/problems/median-of-two-sorted-arrays/)| [C++](./algorithms/cpp/medianOfTwoSortedArrays/medianOfTwoSortedArrays.cpp)|Hard|
-|1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)| [C++](./algorithms/cpp/twoSum/twoSum.cpp),[Java](./algorithms/cpp/twoSum/TwoSum.java)|Medium|
+|1|[Two Sum](https://oj.leetcode.com/problems/two-sum/)| [C++](./algorithms/cpp/twoSum/twoSum.cpp),[Java](./algorithms/java/twoSum/TwoSum.java)|Medium|
 
 
 ###LeetCode Shell

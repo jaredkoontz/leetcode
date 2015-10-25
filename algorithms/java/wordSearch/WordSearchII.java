@@ -7,9 +7,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created by jared on 10/23/15.
- */
+//todo
 public class WordSearchII {
     Set<String> res = new HashSet<String>();
 

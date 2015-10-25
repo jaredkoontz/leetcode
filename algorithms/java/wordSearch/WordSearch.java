@@ -1,8 +1,6 @@
 package wordSearch;
 
-/**
- * Created by jared on 10/23/15.
- */
+//todo
 public class WordSearch {
     public boolean exist(char[][] board, String word) {
         char[] w = word.toCharArray();
