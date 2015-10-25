@@ -1,7 +1,5 @@
 package reverseLinkedList;
 
-/**
- * Created by jared on 10/24/15.
- */
+//todo
 public class reverseLinkedList {
 }

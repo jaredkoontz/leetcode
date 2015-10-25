@@ -1,7 +1,5 @@
 package houseRobber;
 
-/**
- * Created by jared on 10/24/15.
- */
+//todo
 public class houseRobber {
 }

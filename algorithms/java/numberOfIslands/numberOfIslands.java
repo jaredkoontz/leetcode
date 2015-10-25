@@ -1,7 +1,5 @@
 package numberOfIslands;
 
-/**
- * Created by jared on 10/24/15.
- */
+//todo
 public class numberOfIslands {
 }
