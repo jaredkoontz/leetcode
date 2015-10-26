@@ -7,12 +7,12 @@ import org.junit.Test;
 public class AddTwoNumbersTest {
 
     @Test
-    public void test(){
+    public void test() {
         AddTwoNumbers addTwoNumbers = new AddTwoNumbers();
         ListNode n1 = new ListNode(10);
         ListNode n2 = new ListNode(15);
 
-        System.out.println(addTwoNumbers.addTwoNumbers(n1,n2).val);
+        System.out.println(addTwoNumbers.addTwoNumbers(n1, n2).val);
 
     }
 }
