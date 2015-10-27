@@ -2,9 +2,7 @@ package pow;
 
 import org.junit.Test;
 
-/**
- * Created by jared on 10/26/15.
- */
+//todo
 public class powTest {
 
     @Test

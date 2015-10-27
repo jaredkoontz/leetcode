@@ -1,8 +1,6 @@
 package moveZeroes;
 
-/**
- * Created by jared on 10/26/15.
- */
+//todo
 public class moveZeroes {
     // Shift non-zero values as far forward as possible
 // Fill remaining space with zeros

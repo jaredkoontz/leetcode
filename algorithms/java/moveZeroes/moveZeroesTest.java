@@ -4,9 +4,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-/**
- * Created by jared on 10/26/15.
- */
+//todo
 public class moveZeroesTest {
 
     /*Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
