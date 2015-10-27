@@ -43,12 +43,12 @@ public class lowestCommonAncestorOfABinaryTree {
      * @param A     and B: two nodes in a Binary.
      * @return: Return the least common ancestor(LCA) of the two nodes.
      */
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode A, TreeNode B) {
+    public TreeNode lowestCommonAncestorRec(TreeNode root, TreeNode A, TreeNode B) {
         if (root == null || root == A || root == B) {
             return root;
         }
-        TreeNode left = lowestCommonAncestor(root.left, A, B);
-        TreeNode right = lowestCommonAncestor(root.right, A, B);
+        TreeNode left = lowestCommonAncestorRec(root.left, A, B);
+        TreeNode right = lowestCommonAncestorRec(root.right, A, B);
         if (left != null && right != null) {
             return root;
         }

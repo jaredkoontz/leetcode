@@ -30,7 +30,7 @@ public class lowestCommonAncestorOfABinaryTreeTest {
 
         for (int i = 0; i < results.size(); i++) {
             lowestCommonAncestorOfABinaryTree l = new lowestCommonAncestorOfABinaryTree();
-            TreeNode r = l.lowestCommonAncestor(inputeRoots.get(i), inputeAs.get(i), inputeBs.get(i));
+            TreeNode r = l.lowestCommonAncestorRec(inputeRoots.get(i), inputeAs.get(i), inputeBs.get(i));
             assertEquals(results.get(i).val, r.val);
         }
 
