@@ -19,6 +19,8 @@ package balancedBinaryTree;
  * Created by leicao on 7/10/15.
  */
 public class balancedBinaryTree {
+    private boolean result = true;
+
     /**
      * @param root: The root of binary tree.
      * @return: True if this Binary tree is Balanced, or false.
@@ -43,6 +45,21 @@ public class balancedBinaryTree {
             return new Result(false, 0);
         }
         return new Result(true, Math.max(left.height, right.height));
+    }
+
+    public boolean isBalanced2(TreeNode root) {
+        maxDepth(root);
+        return result;
+    }
+
+    public int maxDepth(TreeNode root) {
+        if (root == null)
+            return 0;
+        int l = maxDepth(root.left);
+        int r = maxDepth(root.right);
+        if (Math.abs(l - r) > 1)
+            result = false;
+        return 1 + Math.max(l, r);
     }
 
     // This is not needed. Can just check the depth

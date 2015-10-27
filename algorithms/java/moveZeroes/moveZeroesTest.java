@@ -13,9 +13,9 @@ public class moveZeroesTest {
 
 For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].*/
     @Test
-    public void test(){
+    public void test() {
         moveZeroes m = new moveZeroes();
-        int [] arr = new int[]{0, 1, 0, 3, 12};
+        int[] arr = new int[]{0, 1, 0, 3, 12};
         m.moveZeroes(arr);
         System.out.println(Arrays.toString(arr));
     }
