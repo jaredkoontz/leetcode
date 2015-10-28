@@ -5,9 +5,7 @@ import common.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by jared on 10/27/15.
- */
+//todo
 public class uniqueBinarySearchTreesII {
     public static List<TreeNode> generateTrees2(int n) {
         List<TreeNode>[] result = new List[n + 1];

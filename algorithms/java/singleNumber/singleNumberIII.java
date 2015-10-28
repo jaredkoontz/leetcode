@@ -1,8 +1,6 @@
 package singleNumber;
 
-/**
- * Created by jared on 10/27/15.
- */
+//todo
 public class singleNumberIII {
    /*
    Once again, we need to use XOR to solve this problem. But this time, we need to do it in two passes:
