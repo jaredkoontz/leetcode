@@ -3,9 +3,7 @@ package containsDuplicate;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by jared on 10/27/15.
- */
+//todo
 public class containsDuplicateII {
 
     /*

@@ -1,5 +1,6 @@
 package balancedBinaryTree;
 
+import common.TreeNode;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ public class balancedBinaryTreeTest {
 
     @Test
     public void testIsBalanced() throws Exception {
-        ArrayList<TreeNode> inputes = new ArrayList<TreeNode>();
+        ArrayList<TreeNode> inputs = new ArrayList<TreeNode>();
         boolean[] results = {false, false};
         TreeNode n0 = new TreeNode(0);
         TreeNode n1 = new TreeNode(1);
@@ -32,12 +33,12 @@ public class balancedBinaryTreeTest {
         nn1.left = nn2;
         nn2.left = nn3;
 
-        inputes.add(n0);
-        inputes.add(nn0);
+        inputs.add(n0);
+        inputs.add(nn0);
 
         for (int i = 0; i < results.length; i++) {
             balancedBinaryTree b = new balancedBinaryTree();
-            assertEquals(results[i], b.isBalanced(inputes.get(i)));
+            assertEquals(results[i], b.isBalanced(inputs.get(i)));
         }
 
     }

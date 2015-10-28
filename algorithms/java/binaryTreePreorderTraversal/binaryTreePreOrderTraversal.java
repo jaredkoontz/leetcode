@@ -22,8 +22,12 @@
 
 package binaryTreePreorderTraversal;
 
+import common.TreeNode;
+
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * Created by leicao on 5/10/15.
@@ -45,5 +49,21 @@ public class binaryTreePreOrderTraversal {
         results.add(root.val);
         traversal(results, root.left);
         traversal(results, root.right);
+    }
+
+    public List<Integer> preorderTraversalIter(TreeNode node) {
+        List<Integer> list = new LinkedList<Integer>();
+        Stack<TreeNode> rights = new Stack<TreeNode>();
+        while(node != null) {
+            list.add(node.val);
+            if (node.right != null) {
+                rights.push(node.right);
+            }
+            node = node.left;
+            if (node == null && !rights.isEmpty()) {
+                node = rights.pop();
+            }
+        }
+        return list;
     }
 }

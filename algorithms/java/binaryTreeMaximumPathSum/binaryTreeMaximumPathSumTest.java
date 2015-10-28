@@ -1,5 +1,6 @@
 package binaryTreeMaximumPathSum;
 
+import common.TreeNode;
 import org.junit.Test;
 
 import java.util.ArrayList;

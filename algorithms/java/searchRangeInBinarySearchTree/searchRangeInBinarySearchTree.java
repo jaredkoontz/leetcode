@@ -24,6 +24,8 @@
 
 package searchRangeInBinarySearchTree;
 
+import common.TreeNode;
+
 import java.util.ArrayList;
 
 public class searchRangeInBinarySearchTree {

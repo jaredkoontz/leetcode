@@ -23,6 +23,8 @@
 
 package binaryTreeMaximumPathSum;
 
+import common.TreeNode;
+
 /**
  * Definition of TreeNode:
  * public class TreeNode {

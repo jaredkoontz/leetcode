@@ -10,14 +10,14 @@
  * Example
  * Given tree = [2,1] and node = 1:
  *
- * 2
+ *  2
  * /
  * 1
  * return node 2.
  *
  * Given tree = [2,1,3] and node = 2:
  *
- * 2
+ *  2
  * / \
  * 1  3
  *
@@ -31,6 +31,8 @@
  **********************************************************************************/
 
 package inorderSuccessorInBST;
+
+import common.TreeNode;
 
 public class inorderSuccessorInBST {
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {

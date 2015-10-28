@@ -15,6 +15,8 @@
 
 package binarySearchTreeIterator;
 
+import common.TreeNode;
+
 import java.util.Stack;
 
 /**

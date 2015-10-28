@@ -23,14 +23,14 @@ public class SummaryRanges {
 
     private void run() {
         int[] input = new int[]{1, 2, 3, 5, 8, 12, 13, 14, 15};
-        List<String> condensed = condense(input);
+        List<String> condensed = summaryRanges(input);
         System.out.println(condensed);
         input = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 13, 14, 15};
-        condensed = condense(input);
+        condensed = summaryRanges(input);
         System.out.println(condensed);
     }
 
-    private List<String> condense(int[] input) {
+    private List<String> summaryRanges(int[] input) {
         List<String> list = new ArrayList<>();
         if (input.length == 1) {
             list.add(input[0] + "");

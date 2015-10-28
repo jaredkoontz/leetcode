@@ -34,6 +34,8 @@
 
 package validateBinarySearchTree;
 
+import common.TreeNode;
+
 public class validateBinarySearchTree {
     // Solution 1: Traversal
     // The inorder sequence of a BST is a sorted ascending list

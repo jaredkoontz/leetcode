@@ -15,6 +15,8 @@
 
 package balancedBinaryTree;
 
+import common.TreeNode;
+
 /**
  * Created by leicao on 7/10/15.
  */

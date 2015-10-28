@@ -26,6 +26,8 @@
 
 package lowestCommonAncestorOfABinaryTree;
 
+import common.TreeNode;
+
 /**
  * Definition of TreeNode:
  * public class TreeNode {
