@@ -36,6 +36,8 @@ package validateBinarySearchTree;
 
 import common.TreeNode;
 
+import java.util.Stack;
+
 public class validateBinarySearchTree {
     // Solution 1: Traversal
     // The inorder sequence of a BST is a sorted ascending list
@@ -64,11 +66,7 @@ public class validateBinarySearchTree {
         firstNode = false;
         lastValue = root.val;
 
-        if (!isValidBST(root.right)) {
-            return false;
-        }
-
-        return true;
+        return isValidBST(root.right);
 
     }
 
@@ -114,4 +112,37 @@ public class validateBinarySearchTree {
             this.isBST = isBST;
         }
     }
+
+    //solution 3 recursive
+    public boolean isValidBSTRec(TreeNode root) {
+        return isValidBSTRec(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+
+    public boolean isValidBSTRec(TreeNode root, long minVal, long maxVal) {
+        if (root == null) return true;
+        if (root.val >= maxVal || root.val <= minVal) return false;
+        return isValidBSTRec(root.left, minVal, root.val) && isValidBSTRec(root.right, root.val, maxVal);
+    }
+
+    //solution 4 - inorder iteration
+    public boolean isValidBSTIter (TreeNode root){
+        Stack<TreeNode> stack = new Stack<TreeNode> ();
+        TreeNode cur = root ;
+        TreeNode pre = null ;
+        while (!stack.isEmpty() || cur != null) {
+            if (cur != null) {
+                stack.push(cur);
+                cur = cur.left ;
+            } else {
+                TreeNode p = stack.pop() ;
+                if (pre != null && p.val <= pre.val) {
+                    return false ;
+                }
+                pre = p ;
+                cur = p.right ;
+            }
+        }
+        return true ;
+    }
+
 }
