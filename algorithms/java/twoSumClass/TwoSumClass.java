@@ -22,39 +22,39 @@ import java.util.Map;
  **********************************************************************************/
 
 class TwoSumClass {
-    private HashMap<Integer, Integer> nums = new HashMap<>();
+	private HashMap<Integer, Integer> nums = new HashMap<>();
 
-    public static void main(String[] a) {
-        TwoSumClass s = new TwoSumClass();
-        s.run();
-    }
+	//O(1) add
+	void add(int number) {
+		if (nums.get(number) == null)
+			nums.put(number, 1);
+		else
+			nums.put(number, nums.get(number) + 1);
+	}
 
-    //O(1) add
-    void add(int number) {
-        if (nums.get(number) == null)
-            nums.put(number, 1);
-        else
-            nums.put(number, nums.get(number) + 1);
-    }
+	//O(n) find
+	boolean find(int value) {
+		int one, two;
+		for (Map.Entry<Integer, Integer> entry : nums.entrySet()) {
+			one = entry.getKey();
+			two = value - one;
+			if ((one == two && entry.getValue() > 1) || (one != two && nums.get(two) != null))
+				return true;
+		}
+		return false;
+	}
 
-    //O(n) find
-    boolean find(int value) {
-        int one, two;
-        for (Map.Entry<Integer, Integer> entry : nums.entrySet()) {
-            one = entry.getKey();
-            two = value - one;
-            if ((one == two && entry.getValue() > 1) || (one != two && nums.get(two) != null))
-                return true;
-        }
-        return false;
-    }
+	private void run() {
+		add(1);
+		add(3);
+		add(5);
+		System.out.println(find(4)); // -> true
+		System.out.println(find(7)); // -> false
+	}
 
-    private void run() {
-        add(1);
-        add(3);
-        add(5);
-        System.out.println(find(4)); // -> true
-        System.out.println(find(7)); // -> false
-    }
+	public static void main(String[] a) {
+		TwoSumClass s = new TwoSumClass();
+		s.run();
+	}
 
 }
