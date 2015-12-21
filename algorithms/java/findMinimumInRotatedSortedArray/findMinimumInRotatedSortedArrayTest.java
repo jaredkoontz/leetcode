@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by leicao on 5/10/15.
- */
 public class findMinimumInRotatedSortedArrayTest {
 
     @Test
