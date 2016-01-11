@@ -3,12 +3,10 @@
 
 class Solution {
 public:
-    bool isPowerOfThree(int n) {
-        if (n <= 0) {
-            return 0;
-        }
+    static const int max_log3 = log(numeric_limits<int>::max()) / log(3);
+    static const int max_pow3 = pow(3, max_log3);
 
-        const int max_pow3 = log(numeric_limits<int>::max()) / log(3);
-        return static_cast<int>(pow(3, max_pow3)) % n == 0;
+    bool isPowerOfThree(int n) {
+        return n > 0 && max_pow3 % n == 0;
     }
 };
