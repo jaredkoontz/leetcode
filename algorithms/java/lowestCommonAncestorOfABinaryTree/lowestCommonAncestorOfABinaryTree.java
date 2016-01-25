@@ -40,30 +40,30 @@ import common.TreeNode;
  * }
  */
 public class lowestCommonAncestorOfABinaryTree {
-    /**
-     * @param root: The root of the binary search tree.
-     * @param A     and B: two nodes in a Binary.
-     * @return: Return the least common ancestor(LCA) of the two nodes.
-     */
-    public TreeNode lowestCommonAncestorRec(TreeNode root, TreeNode A, TreeNode B) {
-        if (root == null || root == A || root == B) {
-            return root;
-        }
-        TreeNode left = lowestCommonAncestorRec(root.left, A, B);
-        TreeNode right = lowestCommonAncestorRec(root.right, A, B);
-        if (left != null && right != null) {
-            return root;
-        }
+	/**
+	 * @param root: The root of the binary search tree.
+	 * @param A     and B: two nodes in a Binary.
+	 * @return: Return the least common ancestor(LCA) of the two nodes.
+	 */
+	public TreeNode lowestCommonAncestorRec(TreeNode root, TreeNode A, TreeNode B) {
+		if (root == null || root == A || root == B) {
+			return root;
+		}
+		TreeNode left = lowestCommonAncestorRec(root.left, A, B);
+		TreeNode right = lowestCommonAncestorRec(root.right, A, B);
+		if (left != null && right != null) {
+			return root;
+		}
 
-        if (left != null) {
-            return left;
-        }
+		if (left != null) {
+			return left;
+		}
 
-        if (right != null) {
-            return right;
-        }
-        return null;
-    }
+		if (right != null) {
+			return right;
+		}
+		return null;
+	}
 }
 
 

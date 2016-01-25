@@ -16,37 +16,37 @@ import java.util.List;
  **********************************************************************************/
 public class SummaryRanges {
 
-    public static void main(String[] a) {
-        SummaryRanges summaryRanges = new SummaryRanges();
-        summaryRanges.run();
-    }
+	public static void main(String[] a) {
+		SummaryRanges summaryRanges = new SummaryRanges();
+		summaryRanges.run();
+	}
 
-    private void run() {
-        int[] input = new int[]{1, 2, 3, 5, 8, 12, 13, 14, 15};
-        List<String> condensed = summaryRanges(input);
-        System.out.println(condensed);
-        input = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 13, 14, 15};
-        condensed = summaryRanges(input);
-        System.out.println(condensed);
-    }
+	private void run() {
+		int[] input = new int[]{1, 2, 3, 5, 8, 12, 13, 14, 15};
+		List<String> condensed = summaryRanges(input);
+		System.out.println(condensed);
+		input = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 13, 14, 15};
+		condensed = summaryRanges(input);
+		System.out.println(condensed);
+	}
 
-    private List<String> summaryRanges(int[] input) {
-        List<String> list = new ArrayList<>();
-        if (input.length == 1) {
-            list.add(input[0] + "");
-            return list;
-        }
-        for (int i = 0; i < input.length; i++) {
-            int a = input[i];
-            while (i + 1 < input.length && (input[i + 1] - input[i]) == 1) {
-                i++;
-            }
-            if (a != input[i]) {
-                list.add(a + "->" + input[i]);
-            } else {
-                list.add(a + "");
-            }
-        }
-        return list;
-    }
+	private List<String> summaryRanges(int[] input) {
+		List<String> list = new ArrayList<>();
+		if (input.length == 1) {
+			list.add(input[0] + "");
+			return list;
+		}
+		for (int i = 0; i < input.length; i++) {
+			int a = input[i];
+			while (i + 1 < input.length && (input[i + 1] - input[i]) == 1) {
+				i++;
+			}
+			if (a != input[i]) {
+				list.add(a + "->" + input[i]);
+			} else {
+				list.add(a + "");
+			}
+		}
+		return list;
+	}
 }

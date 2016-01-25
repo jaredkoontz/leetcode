@@ -25,30 +25,30 @@ import common.TreeNode;
  * }
  */
 public class maximumDepthOfBinaryTree {
-    public int maxDepth(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
-        return theDepth(root);
-    }
+	public int maxDepth(TreeNode root) {
+		if (root == null) {
+			return 0;
+		}
+		return theDepth(root);
+	}
 
-    private int theDepth(TreeNode root) {
-        int leftDepth = 1;
-        int rightDepth = 1;
+	private int theDepth(TreeNode root) {
+		int leftDepth = 1;
+		int rightDepth = 1;
 
-        if (root.left != null) {
-            leftDepth = theDepth(root.left) + 1;
-        }
-        if (root.right != null) {
-            rightDepth = theDepth(root.right) + 1;
-        }
-        return Math.max(leftDepth, rightDepth);
-    }
+		if (root.left != null) {
+			leftDepth = theDepth(root.left) + 1;
+		}
+		if (root.right != null) {
+			rightDepth = theDepth(root.right) + 1;
+		}
+		return Math.max(leftDepth, rightDepth);
+	}
 
-    public int maxDepth2(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
-        return 1 + Math.max(maxDepth2(root.left), maxDepth2(root.right));
-    }
+	public int maxDepth2(TreeNode root) {
+		if (root == null) {
+			return 0;
+		}
+		return 1 + Math.max(maxDepth2(root.left), maxDepth2(root.right));
+	}
 }

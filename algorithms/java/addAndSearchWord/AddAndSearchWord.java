@@ -31,19 +31,19 @@ package addAndSearchWord;
  * You should be familiar with how a Trie works. If not, please work on this problem: Implement Trie (Prefix Tree) first.
  **********************************************************************************/
 public class AddAndSearchWord {
-    public static void main(String[] a) {
-        AddAndSearchWord addAndSearchWord = new AddAndSearchWord();
-        addAndSearchWord.run();
-    }
+	public static void main(String[] a) {
+		AddAndSearchWord addAndSearchWord = new AddAndSearchWord();
+		addAndSearchWord.run();
+	}
 
-    private void run() {
-        WordDictionary wordDictionary = new WordDictionary();
-        wordDictionary.addWord("bad");
-        wordDictionary.addWord("dad");
-        wordDictionary.addWord("mad");
-        System.out.println(wordDictionary.search("pad")); // -> false
-        System.out.println(wordDictionary.search("bad")); // -> true
-        System.out.println(wordDictionary.search(".ad")); // -> true
-        System.out.println(wordDictionary.search("b..")); // -> true
-    }
+	private void run() {
+		WordDictionary wordDictionary = new WordDictionary();
+		wordDictionary.addWord("bad");
+		wordDictionary.addWord("dad");
+		wordDictionary.addWord("mad");
+		System.out.println(wordDictionary.search("pad")); // -> false
+		System.out.println(wordDictionary.search("bad")); // -> true
+		System.out.println(wordDictionary.search(".ad")); // -> true
+		System.out.println(wordDictionary.search("b..")); // -> true
+	}
 }

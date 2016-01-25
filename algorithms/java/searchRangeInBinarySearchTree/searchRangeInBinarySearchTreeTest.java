@@ -12,39 +12,39 @@ import static org.junit.Assert.assertTrue;
  */
 public class searchRangeInBinarySearchTreeTest {
 
-    @Test
-    public void testSearchRange() throws Exception {
-        ArrayList<TreeNode> inputs = new ArrayList<TreeNode>();
+	@Test
+	public void testSearchRange() throws Exception {
+		ArrayList<TreeNode> inputs = new ArrayList<TreeNode>();
 
-        TreeNode t1 = new TreeNode(20);
-        TreeNode t2 = new TreeNode(8);
-        TreeNode t3 = new TreeNode(22);
-        TreeNode t4 = new TreeNode(4);
-        TreeNode t5 = new TreeNode(12);
+		TreeNode t1 = new TreeNode(20);
+		TreeNode t2 = new TreeNode(8);
+		TreeNode t3 = new TreeNode(22);
+		TreeNode t4 = new TreeNode(4);
+		TreeNode t5 = new TreeNode(12);
 
-        t1.left = t2;
-        t1.right = t3;
-        t2.left = t4;
-        t2.right = t5;
+		t1.left = t2;
+		t1.right = t3;
+		t2.left = t4;
+		t2.right = t5;
 
-        inputs.add(t1);
+		inputs.add(t1);
 
-        int[][] ranges = {
-                {10, 22}
-        };
+		int[][] ranges = {
+				{10, 22}
+		};
 
-        ArrayList<ArrayList<Integer>> results = new ArrayList<ArrayList<Integer>>() {{
-            add(new ArrayList<Integer>() {{
-                add(12);
-                add(20);
-                add(22);
-            }});
-        }};
+		ArrayList<ArrayList<Integer>> results = new ArrayList<ArrayList<Integer>>() {{
+			add(new ArrayList<Integer>() {{
+				add(12);
+				add(20);
+				add(22);
+			}});
+		}};
 
-        for (int i = 0; i < results.size(); i++) {
-            searchRangeInBinarySearchTree s = new searchRangeInBinarySearchTree();
-            ArrayList<Integer> r = s.searchRange(inputs.get(i), ranges[i][0], ranges[i][1]);
-            assertTrue(r.containsAll(results.get(i)) && r.size() == results.get(i).size());
-        }
-    }
+		for (int i = 0; i < results.size(); i++) {
+			searchRangeInBinarySearchTree s = new searchRangeInBinarySearchTree();
+			ArrayList<Integer> r = s.searchRange(inputs.get(i), ranges[i][0], ranges[i][1]);
+			assertTrue(r.containsAll(results.get(i)) && r.size() == results.get(i).size());
+		}
+	}
 }

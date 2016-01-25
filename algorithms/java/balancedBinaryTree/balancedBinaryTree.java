@@ -21,57 +21,57 @@ import common.TreeNode;
  * Created by leicao on 7/10/15.
  */
 public class balancedBinaryTree {
-    private boolean result = true;
+	private boolean result = true;
 
-    /**
-     * @param root: The root of binary tree.
-     * @return: True if this Binary tree is Balanced, or false.
-     */
-    public boolean isBalanced(TreeNode root) {
-        // write your code here
-        return helper(root, 0).isBalanced;
-    }
+	/**
+	 * @param root: The root of binary tree.
+	 * @return: True if this Binary tree is Balanced, or false.
+	 */
+	public boolean isBalanced(TreeNode root) {
+		// write your code here
+		return helper(root, 0).isBalanced;
+	}
 
-    private Result helper(TreeNode root, int depth) {
-        if (root == null) {
-            return new Result(true, depth);
-        }
-        Result left = helper(root.left, depth + 1);
-        Result right = helper(root.right, depth + 1);
+	private Result helper(TreeNode root, int depth) {
+		if (root == null) {
+			return new Result(true, depth);
+		}
+		Result left = helper(root.left, depth + 1);
+		Result right = helper(root.right, depth + 1);
 
-        if (!left.isBalanced || !right.isBalanced) {
-            return new Result(false, 0);
-        }
+		if (!left.isBalanced || !right.isBalanced) {
+			return new Result(false, 0);
+		}
 
-        if (Math.abs(left.height - right.height) > 1) {
-            return new Result(false, 0);
-        }
-        return new Result(true, Math.max(left.height, right.height));
-    }
+		if (Math.abs(left.height - right.height) > 1) {
+			return new Result(false, 0);
+		}
+		return new Result(true, Math.max(left.height, right.height));
+	}
 
-    public boolean isBalanced2(TreeNode root) {
-        maxDepth(root);
-        return result;
-    }
+	public boolean isBalanced2(TreeNode root) {
+		maxDepth(root);
+		return result;
+	}
 
-    public int maxDepth(TreeNode root) {
-        if (root == null)
-            return 0;
-        int l = maxDepth(root.left);
-        int r = maxDepth(root.right);
-        if (Math.abs(l - r) > 1)
-            result = false;
-        return 1 + Math.max(l, r);
-    }
+	public int maxDepth(TreeNode root) {
+		if (root == null)
+			return 0;
+		int l = maxDepth(root.left);
+		int r = maxDepth(root.right);
+		if (Math.abs(l - r) > 1)
+			result = false;
+		return 1 + Math.max(l, r);
+	}
 
-    // This is not needed. Can just check the depth
-    private class Result {
-        boolean isBalanced;
-        int height;
+	// This is not needed. Can just check the depth
+	private class Result {
+		boolean isBalanced;
+		int height;
 
-        Result(boolean isBalanced, int height) {
-            this.isBalanced = isBalanced;
-            this.height = height;
-        }
-    }
+		Result(boolean isBalanced, int height) {
+			this.isBalanced = isBalanced;
+			this.height = height;
+		}
+	}
 }

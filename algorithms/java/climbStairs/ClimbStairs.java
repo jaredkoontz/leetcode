@@ -25,34 +25,34 @@ public class ClimbStairs {
     The implementation in Java as follows:
     */
 
-    public int climbStairs(int n) {
-        int[] matrix = new int[n];
-        if (n < 3) {
-            return n;
-        }
-        matrix[0] = 1;
-        matrix[1] = 2;
-        // write your code here
-        for (int i = 2; i < matrix.length; i++) {
-            matrix[i] = matrix[i - 1] + matrix[i - 2];
-        }
-        return matrix[n - 1];
-    }
+	public int climbStairs(int n) {
+		int[] matrix = new int[n];
+		if (n < 3) {
+			return n;
+		}
+		matrix[0] = 1;
+		matrix[1] = 2;
+		// write your code here
+		for (int i = 2; i < matrix.length; i++) {
+			matrix[i] = matrix[i - 1] + matrix[i - 2];
+		}
+		return matrix[n - 1];
+	}
 
-    int climbStairs2(int n) {
-        if (n <= 3) return n;
-        int a[] = new int[]{2, 3};
-        for (int i = 4; i <= n; i++) {
-            int t = a[0] + a[1];
-            a[0] = a[1];
-            a[1] = t;
-        }
-        return a[1];
-    }
+	int climbStairs2(int n) {
+		if (n <= 3) return n;
+		int a[] = new int[]{2, 3};
+		for (int i = 4; i <= n; i++) {
+			int t = a[0] + a[1];
+			a[0] = a[1];
+			a[1] = t;
+		}
+		return a[1];
+	}
 
-    //Time too long
-    int climbStairsFoolish(int n) {
-        if (n <= 3) return n;
-        return climbStairsFoolish(n - 1) + climbStairsFoolish(n - 2);
-    }
+	//Time too long
+	int climbStairsFoolish(int n) {
+		if (n <= 3) return n;
+		return climbStairsFoolish(n - 1) + climbStairsFoolish(n - 2);
+	}
 }

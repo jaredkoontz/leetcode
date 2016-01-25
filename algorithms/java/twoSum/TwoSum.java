@@ -9,7 +9,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**********************************************************************************
- *
  * Given an array of integers, find two numbers such that they add up to a specific target number.
  *
  * The function twoSum should return indices of the two numbers such that they add up to the target,
@@ -20,8 +19,6 @@ import java.util.Map;
  *
  * Input: numbers={2, 7, 11, 15}, target=9
  * Output: index1=1, index2=2
- *
- *
  **********************************************************************************/
 
 public class TwoSum {
@@ -55,6 +52,13 @@ public class TwoSum {
 	//     which means we found the second one.
 	//
 
+	public static void main(String[] a) {
+		int[] numbers = new int[]{2, 7, 11, 15};
+		int target = 9;
+		TwoSum s = new TwoSum();
+		System.out.println(Arrays.toString(s.twoSum(numbers, target)));
+	}
+
 	public int[] twoSum(int[] numbers, int target) {
 		int[] result = new int[2];
 		Map<Integer, Integer> map = new HashMap<>();
@@ -67,12 +71,5 @@ public class TwoSum {
 			map.put(numbers[i], i + 1);
 		}
 		return result;
-	}
-
-	public static void main(String[] a){
-		int [] numbers= new int[] {2, 7, 11, 15};
-		int target=9;
-		TwoSum s = new TwoSum();
-		System.out.println(Arrays.toString(s.twoSum(numbers, target)));
 	}
 }

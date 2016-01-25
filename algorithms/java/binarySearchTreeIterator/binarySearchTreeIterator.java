@@ -37,35 +37,35 @@ import java.util.Stack;
  * }
  */
 public class binarySearchTreeIterator {
-    private TreeNode currentNode = null;
-    private Stack<TreeNode> stack = new Stack<TreeNode>();
+	private TreeNode currentNode = null;
+	private Stack<TreeNode> stack = new Stack<TreeNode>();
 
-    //@param root: The root of binary tree.
-    public binarySearchTreeIterator(TreeNode root) {
-        if (root != null) {
-            currentNode = root;
-        }
-    }
+	//@param root: The root of binary tree.
+	public binarySearchTreeIterator(TreeNode root) {
+		if (root != null) {
+			currentNode = root;
+		}
+	}
 
-    //@return: True if there has next node, or false
-    public boolean hasNext() {
-        // write your code here
-        return currentNode != null || !stack.isEmpty();
-    }
+	//@return: True if there has next node, or false
+	public boolean hasNext() {
+		// write your code here
+		return currentNode != null || !stack.isEmpty();
+	}
 
-    //@return: return next node
-    public TreeNode next() {
-        // write your code here
-        while (currentNode != null) {
-            stack.push(currentNode);
-            currentNode = currentNode.left;
-        }
+	//@return: return next node
+	public TreeNode next() {
+		// write your code here
+		while (currentNode != null) {
+			stack.push(currentNode);
+			currentNode = currentNode.left;
+		}
 
-        currentNode = stack.pop();
-        TreeNode node = currentNode;
-        currentNode = currentNode.right;
+		currentNode = stack.pop();
+		TreeNode node = currentNode;
+		currentNode = currentNode.right;
 
-        return node;
-    }
+		return node;
+	}
 }
 

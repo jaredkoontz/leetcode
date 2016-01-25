@@ -54,43 +54,43 @@ import java.util.List;
 import java.util.Queue;
 
 public class binaryTreeLevelOrderTraversal {
-    /**
-     * @param root: The root of binary tree.
-     * @return: Level order a list of lists of integer
-     */
-    public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> results = new ArrayList<List<Integer>>();
-        if (root == null) {
-            return results;
-        }
+	/**
+	 * @param root: The root of binary tree.
+	 * @return: Level order a list of lists of integer
+	 */
+	public List<List<Integer>> levelOrder(TreeNode root) {
+		List<List<Integer>> results = new ArrayList<List<Integer>>();
+		if (root == null) {
+			return results;
+		}
 
-        ArrayList<Integer> values = new ArrayList<Integer>();
-        Queue<TreeNode> q = new LinkedList<TreeNode>();
+		ArrayList<Integer> values = new ArrayList<Integer>();
+		Queue<TreeNode> q = new LinkedList<TreeNode>();
 
-        q.offer(root);
-        q.offer(null);
+		q.offer(root);
+		q.offer(null);
 
-        while (q.size() > 0) {
-            TreeNode node = q.poll();
-            // null node used as a separator of every level
-            if (node == null) {
-                results.add(new ArrayList<Integer>(values));
-                values.clear();
-                if (q.size() == 0) {
-                    break;
-                }
-                q.offer(null);
-                continue;
-            }
-            values.add(node.val);
-            if (node.left != null) {
-                q.offer(node.left);
-            }
-            if (node.right != null) {
-                q.offer(node.right);
-            }
-        }
+		while (q.size() > 0) {
+			TreeNode node = q.poll();
+			// null node used as a separator of every level
+			if (node == null) {
+				results.add(new ArrayList<Integer>(values));
+				values.clear();
+				if (q.size() == 0) {
+					break;
+				}
+				q.offer(null);
+				continue;
+			}
+			values.add(node.val);
+			if (node.left != null) {
+				q.offer(node.left);
+			}
+			if (node.right != null) {
+				q.offer(node.right);
+			}
+		}
 
-        return results;
-    }
+		return results;
+	}
 }

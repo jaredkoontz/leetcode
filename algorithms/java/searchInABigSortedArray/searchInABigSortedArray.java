@@ -21,46 +21,46 @@ package searchInABigSortedArray;
  * Created by leicao on 5/10/15.
  */
 public class searchInABigSortedArray {
-    public int searchBigSortedArray(int[] A, int target) {
-        if (A == null || A.length == 0) {
-            return -1;
-        }
+	public int searchBigSortedArray(int[] A, int target) {
+		if (A == null || A.length == 0) {
+			return -1;
+		}
 
-        int start = 0;
-        int end = A.length - 1;
-        int upperBound = 1;
+		int start = 0;
+		int end = A.length - 1;
+		int upperBound = 1;
 
-        // @TODO The logic here needs to be reviewed.
-        for (int i = 0; i < Math.sqrt(A.length) + 1; i++) {
-            if (upperBound < 0) {
-                end = A.length - 1;
-                break;
-            }
-            if (A.length > upperBound && A[upperBound] > target) {
-                end = upperBound - 1;
-                break;
-            }
-            upperBound = upperBound * 2;
-        }
+		// @TODO The logic here needs to be reviewed.
+		for (int i = 0; i < Math.sqrt(A.length) + 1; i++) {
+			if (upperBound < 0) {
+				end = A.length - 1;
+				break;
+			}
+			if (A.length > upperBound && A[upperBound] > target) {
+				end = upperBound - 1;
+				break;
+			}
+			upperBound = upperBound * 2;
+		}
 
-        while (start + 1 < end) {
-            int mid = start + (end - start) / 2;
-            if (A[mid] == target) {
-                end = mid;
-            } else if (A[mid] < target) {
-                start = mid;
-            } else {
-                end = mid;
-            }
-        }
+		while (start + 1 < end) {
+			int mid = start + (end - start) / 2;
+			if (A[mid] == target) {
+				end = mid;
+			} else if (A[mid] < target) {
+				start = mid;
+			} else {
+				end = mid;
+			}
+		}
 
-        if (A[start] == target) {
-            return start;
-        }
-        if (A[end] == target) {
-            return end;
-        }
+		if (A[start] == target) {
+			return start;
+		}
+		if (A[end] == target) {
+			return end;
+		}
 
-        return -1;
-    }
+		return -1;
+	}
 }

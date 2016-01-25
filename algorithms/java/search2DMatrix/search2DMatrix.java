@@ -26,49 +26,49 @@
 package search2DMatrix;
 
 public class search2DMatrix {
-    int rows = 0;
-    int cols = 0;
-    int[][] m;
+	int rows = 0;
+	int cols = 0;
+	int[][] m;
 
-    public boolean searchMatrix(int[][] matrix, int target) {
-        if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
-            return false;
-        }
+	public boolean searchMatrix(int[][] matrix, int target) {
+		if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {
+			return false;
+		}
 
-        m = matrix;
-        rows = matrix.length;
-        cols = matrix[0].length;
+		m = matrix;
+		rows = matrix.length;
+		cols = matrix[0].length;
 
-        int start = 0;
-        int end = rows * cols - 1;
+		int start = 0;
+		int end = rows * cols - 1;
 
-        while (start + 1 < end) {
-            int mid = start + (end - start) / 2;
-            if (getValue(mid) == target) {
-                return true;
-            } else if (getValue(mid) < target) {
-                start = mid;
-            } else {
-                end = mid;
-            }
-        }
+		while (start + 1 < end) {
+			int mid = start + (end - start) / 2;
+			if (getValue(mid) == target) {
+				return true;
+			} else if (getValue(mid) < target) {
+				start = mid;
+			} else {
+				end = mid;
+			}
+		}
 
-        if (getValue(start) == target) {
-            return true;
-        }
-        if (getValue(end) == target) {
-            return true;
-        }
-        return false;
-    }
+		if (getValue(start) == target) {
+			return true;
+		}
+		if (getValue(end) == target) {
+			return true;
+		}
+		return false;
+	}
 
-    /**
-     * Get the value of the 2D matrix from the index
-     *
-     * @param index
-     * @return
-     */
-    private int getValue(int index) {
-        return m[index / cols][index % cols];
-    }
+	/**
+	 * Get the value of the 2D matrix from the index
+	 *
+	 * @param index
+	 * @return
+	 */
+	private int getValue(int index) {
+		return m[index / cols][index % cols];
+	}
 }

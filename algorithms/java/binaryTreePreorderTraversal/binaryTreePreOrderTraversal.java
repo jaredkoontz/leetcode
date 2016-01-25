@@ -34,36 +34,36 @@ import java.util.Stack;
  */
 public class binaryTreePreOrderTraversal {
 
-    //Version 1: Traverse
-    public List<Integer> preorderTraversal(TreeNode root) {
-        List<Integer> results = new ArrayList<Integer>();
-        traversal(results, root);
-        return results;
+	//Version 1: Traverse
+	public List<Integer> preorderTraversal(TreeNode root) {
+		List<Integer> results = new ArrayList<Integer>();
+		traversal(results, root);
+		return results;
 
-    }
+	}
 
-    private void traversal(List<Integer> results, TreeNode root) {
-        if (results == null || root == null) {
-            return;
-        }
-        results.add(root.val);
-        traversal(results, root.left);
-        traversal(results, root.right);
-    }
+	private void traversal(List<Integer> results, TreeNode root) {
+		if (results == null || root == null) {
+			return;
+		}
+		results.add(root.val);
+		traversal(results, root.left);
+		traversal(results, root.right);
+	}
 
-    public List<Integer> preorderTraversalIter(TreeNode node) {
-        List<Integer> list = new LinkedList<Integer>();
-        Stack<TreeNode> rights = new Stack<TreeNode>();
-        while(node != null) {
-            list.add(node.val);
-            if (node.right != null) {
-                rights.push(node.right);
-            }
-            node = node.left;
-            if (node == null && !rights.isEmpty()) {
-                node = rights.pop();
-            }
-        }
-        return list;
-    }
+	public List<Integer> preorderTraversalIter(TreeNode node) {
+		List<Integer> list = new LinkedList<Integer>();
+		Stack<TreeNode> rights = new Stack<TreeNode>();
+		while (node != null) {
+			list.add(node.val);
+			if (node.right != null) {
+				rights.push(node.right);
+			}
+			node = node.left;
+			if (node == null && !rights.isEmpty()) {
+				node = rights.pop();
+			}
+		}
+		return list;
+	}
 }

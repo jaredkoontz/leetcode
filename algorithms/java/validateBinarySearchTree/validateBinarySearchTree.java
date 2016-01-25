@@ -39,110 +39,110 @@ import common.TreeNode;
 import java.util.Stack;
 
 public class validateBinarySearchTree {
-    // Solution 1: Traversal
-    // The inorder sequence of a BST is a sorted ascending list
-    private int lastValue = 0; // the init value of it doesn't matter.
-    private boolean firstNode = true;
+	// Solution 1: Traversal
+	// The inorder sequence of a BST is a sorted ascending list
+	private int lastValue = 0; // the init value of it doesn't matter.
+	private boolean firstNode = true;
 
-    public boolean isValidBST(TreeNode root) {
-        return isBSTTraversal(root) && isBSTDivideAndConquer(root);
-    }
+	public boolean isValidBST(TreeNode root) {
+		return isBSTTraversal(root) && isBSTDivideAndConquer(root);
+	}
 
-    public boolean isBSTTraversal(TreeNode root) {
-        if (root == null) {
-            return true;
-        }
+	public boolean isBSTTraversal(TreeNode root) {
+		if (root == null) {
+			return true;
+		}
 
-        if (!isValidBST(root.left)) {
-            return false;
-        }
+		if (!isValidBST(root.left)) {
+			return false;
+		}
 
-        // firstNode is needed because of if firstNode is Integer.MIN_VALUE,
-        // even if we set lastValue to Integer.MIN_VALUE, it will still return false
-        if (!firstNode && lastValue >= root.val) {
-            return false;
-        }
+		// firstNode is needed because of if firstNode is Integer.MIN_VALUE,
+		// even if we set lastValue to Integer.MIN_VALUE, it will still return false
+		if (!firstNode && lastValue >= root.val) {
+			return false;
+		}
 
-        firstNode = false;
-        lastValue = root.val;
+		firstNode = false;
+		lastValue = root.val;
 
-        return isValidBST(root.right);
+		return isValidBST(root.right);
 
-    }
+	}
 
-    public boolean isBSTDivideAndConquer(TreeNode root) {
-        return isBSTHelper(root).isBST;
-    }
+	public boolean isBSTDivideAndConquer(TreeNode root) {
+		return isBSTHelper(root).isBST;
+	}
 
-    public Result isBSTHelper(TreeNode root) {
-        // For leaf node's left or right
-        if (root == null) {
-            // we set min to Integer.MAX_VALUE and max to Integer.MIN_VALUE
-            // because of in the previous level which is the leaf level,
-            // we want to set the min or max to that leaf node's val (in the last return line)
-            return new Result(Integer.MAX_VALUE, Integer.MIN_VALUE, true);
-        }
+	public Result isBSTHelper(TreeNode root) {
+		// For leaf node's left or right
+		if (root == null) {
+			// we set min to Integer.MAX_VALUE and max to Integer.MIN_VALUE
+			// because of in the previous level which is the leaf level,
+			// we want to set the min or max to that leaf node's val (in the last return line)
+			return new Result(Integer.MAX_VALUE, Integer.MIN_VALUE, true);
+		}
 
-        Result left = isBSTHelper(root.left);
-        Result right = isBSTHelper(root.right);
+		Result left = isBSTHelper(root.left);
+		Result right = isBSTHelper(root.right);
 
-        if (!left.isBST || !right.isBST) {
-            return new Result(0, 0, false);
-        }
+		if (!left.isBST || !right.isBST) {
+			return new Result(0, 0, false);
+		}
 
-        // For non-leaf node
-        if (root.left != null && left.max >= root.val
-                && root.right != null && right.min <= root.val) {
-            return new Result(0, 0, false);
-        }
+		// For non-leaf node
+		if (root.left != null && left.max >= root.val
+				&& root.right != null && right.min <= root.val) {
+			return new Result(0, 0, false);
+		}
 
-        return new Result(Math.min(left.min, root.val),
-                Math.max(right.max, root.val), true);
-    }
+		return new Result(Math.min(left.min, root.val),
+				Math.max(right.max, root.val), true);
+	}
 
-    // Solution 2: divide && conquer
-    private class Result {
-        int min;
-        int max;
-        boolean isBST;
+	//solution 3 recursive
+	public boolean isValidBSTRec(TreeNode root) {
+		return isValidBSTRec(root, Long.MIN_VALUE, Long.MAX_VALUE);
+	}
 
-        Result(int min, int max, boolean isBST) {
-            this.min = min;
-            this.max = max;
-            this.isBST = isBST;
-        }
-    }
+	public boolean isValidBSTRec(TreeNode root, long minVal, long maxVal) {
+		if (root == null) return true;
+		if (root.val >= maxVal || root.val <= minVal) return false;
+		return isValidBSTRec(root.left, minVal, root.val) && isValidBSTRec(root.right, root.val, maxVal);
+	}
 
-    //solution 3 recursive
-    public boolean isValidBSTRec(TreeNode root) {
-        return isValidBSTRec(root, Long.MIN_VALUE, Long.MAX_VALUE);
-    }
+	//solution 4 - inorder iteration
+	public boolean isValidBSTIter(TreeNode root) {
+		Stack<TreeNode> stack = new Stack<TreeNode>();
+		TreeNode cur = root;
+		TreeNode pre = null;
+		while (!stack.isEmpty() || cur != null) {
+			if (cur != null) {
+				stack.push(cur);
+				cur = cur.left;
+			} else {
+				TreeNode p = stack.pop();
+				if (pre != null && p.val <= pre.val) {
+					return false;
+				}
+				pre = p;
+				cur = p.right;
+			}
+		}
+		return true;
+	}
 
-    public boolean isValidBSTRec(TreeNode root, long minVal, long maxVal) {
-        if (root == null) return true;
-        if (root.val >= maxVal || root.val <= minVal) return false;
-        return isValidBSTRec(root.left, minVal, root.val) && isValidBSTRec(root.right, root.val, maxVal);
-    }
+	// Solution 2: divide && conquer
+	private class Result {
+		int min;
+		int max;
+		boolean isBST;
 
-    //solution 4 - inorder iteration
-    public boolean isValidBSTIter (TreeNode root){
-        Stack<TreeNode> stack = new Stack<TreeNode> ();
-        TreeNode cur = root ;
-        TreeNode pre = null ;
-        while (!stack.isEmpty() || cur != null) {
-            if (cur != null) {
-                stack.push(cur);
-                cur = cur.left ;
-            } else {
-                TreeNode p = stack.pop() ;
-                if (pre != null && p.val <= pre.val) {
-                    return false ;
-                }
-                pre = p ;
-                cur = p.right ;
-            }
-        }
-        return true ;
-    }
+		Result(int min, int max, boolean isBST) {
+			this.min = min;
+			this.max = max;
+			this.isBST = isBST;
+		}
+	}
 
 }

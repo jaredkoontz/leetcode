@@ -10,13 +10,13 @@ the game given the number of stones in the heap.
 For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove,
 the last stone will always be removed by your friend.*/
 public class nimGame {
-    public boolean canWinNim(int n) {
-        if (n <= 0) {
-            return false;
-        }
-        return n % 4 != 0;
-    }
-    /*According to the hint, we know that if n = 4, no matter how many stones I remove, I lose. If n = 5, I can remove
+	public boolean canWinNim(int n) {
+		if (n <= 0) {
+			return false;
+		}
+		return n % 4 != 0;
+	}
+	/*According to the hint, we know that if n = 4, no matter how many stones I remove, I lose. If n = 5, I can remove
     one stone and there are 4 stones for another player. Thus, I win. Similarly, if n = 6 or 7, I can remove 2 or 3
     stones and i win finally.
 

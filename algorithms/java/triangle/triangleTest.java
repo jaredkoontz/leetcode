@@ -9,24 +9,24 @@ import static org.junit.Assert.assertEquals;
  */
 public class triangleTest {
 
-    @Test
-    public void testMinimumTotal() throws Exception {
-        int[][][] inputes = {
-                {
-                        {2},
-                        {3, 4},
-                        {6, 5, 7},
-                        {4, 1, 8, 3},
-                }
-        };
+	@Test
+	public void testMinimumTotal() throws Exception {
+		int[][][] inputes = {
+				{
+						{2},
+						{3, 4},
+						{6, 5, 7},
+						{4, 1, 8, 3},
+				}
+		};
 
-        int[] results = {11};
+		int[] results = {11};
 
-        for (int i = 0; i < results.length; i++) {
-            triangle t = new triangle();
-            int r = t.minimumTotal2(inputes[i]);
-            assertEquals(results[i], r);
-        }
+		for (int i = 0; i < results.length; i++) {
+			triangle t = new triangle();
+			int r = t.minimumTotal2(inputes[i]);
+			assertEquals(results[i], r);
+		}
 
-    }
+	}
 }

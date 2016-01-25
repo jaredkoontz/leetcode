@@ -40,18 +40,18 @@ public class uniqueBinarySearchTrees {
 
     With the above explanation and formulas, here is the implementation in Java.*/
 
-    public int numTrees(int n) {
-        int [] G = new int[n+1];
-        G[0] = G[1] = 1;
+	public int numTrees(int n) {
+		int[] G = new int[n + 1];
+		G[0] = G[1] = 1;
 
-        for(int i=2; i<=n; ++i) {
-            for(int j=1; j<=i; ++j) {
-                G[i] += G[j-1] * G[i-j];
-            }
-        }
+		for (int i = 2; i <= n; ++i) {
+			for (int j = 1; j <= i; ++j) {
+				G[i] += G[j - 1] * G[i - j];
+			}
+		}
 
-        return G[n];
-    }
+		return G[n];
+	}
 
     /*WE can know that by zero we can have 1 bst of null by 1 we have 1 bst of 1 and for 2 we can arrange using two
     ways Now idea is simple for rest numbers. for n=3 make 1 as root node so there will be 0 nodes in left subtree and
@@ -61,27 +61,27 @@ public class uniqueBinarySearchTrees {
     give 2 BST and zero will give 1 BST. Totalling the result of all the 3 nodes as root will give 5. Same process can
     be applied for more numbers.*/
 
-    public int number(int n){
-        if(n==0)return 1;
-        if(n==1)return 1;
+	public int number(int n) {
+		if (n == 0) return 1;
+		if (n == 1) return 1;
 
-        int result[]=new int [n+1];
-        result[0]=1;
-        result[1]=1;
-        result[2]=2;
-        if(n<3){
-            return result[n];
-        }
+		int result[] = new int[n + 1];
+		result[0] = 1;
+		result[1] = 1;
+		result[2] = 2;
+		if (n < 3) {
+			return result[n];
+		}
 
-        for(int i=3;i<=n;i++){
-            for(int k=1;k<=i;k++){
+		for (int i = 3; i <= n; i++) {
+			for (int k = 1; k <= i; k++) {
 
-                result[i]=result[i]+result[k-1]*result[i-k];
-            }
-        }
+				result[i] = result[i] + result[k - 1] * result[i - k];
+			}
+		}
 
 
-        return result[n];
-    }
+		return result[n];
+	}
 
 }

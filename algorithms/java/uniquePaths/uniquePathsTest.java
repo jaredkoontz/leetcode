@@ -9,19 +9,19 @@ import static org.junit.Assert.assertEquals;
  */
 public class uniquePathsTest {
 
-    @Test
-    public void testUniquePaths() throws Exception {
-        int[][] inputs = {
-                {2, 2},
-                {3, 7},
-        };
-        int[] results = {2, 28};
-        for (int i = 0; i < inputs.length; i++) {
-            uniquePaths u = new uniquePaths();
-            int r = u.uniquePaths(inputs[i][0], inputs[i][1]);
-            System.out.println(r);
-            assertEquals(results[i], r);
-        }
+	@Test
+	public void testUniquePaths() throws Exception {
+		int[][] inputs = {
+				{2, 2},
+				{3, 7},
+		};
+		int[] results = {2, 28};
+		for (int i = 0; i < inputs.length; i++) {
+			uniquePaths u = new uniquePaths();
+			int r = u.uniquePaths(inputs[i][0], inputs[i][1]);
+			System.out.println(r);
+			assertEquals(results[i], r);
+		}
 
-    }
+	}
 }

@@ -12,90 +12,90 @@ import static org.junit.Assert.assertTrue;
  */
 public class subsetsTest {
 
-    @Test
-    public void testSubsets() throws Exception {
+	@Test
+	public void testSubsets() throws Exception {
 
-        ArrayList<Integer> inputs = new ArrayList<Integer>() {{
-            add(1);
-            add(2);
-            add(3);
-        }};
-        ArrayList<ArrayList<Integer>> outputs = new ArrayList<ArrayList<Integer>>() {{
-            add(new ArrayList<Integer>() {{
-                add(3);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(1);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(2);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(1);
-                add(2);
-                add(3);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(1);
-                add(3);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(2);
-                add(3);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(1);
-                add(2);
-            }});
-            add(new ArrayList<Integer>() {{
-            }});
-        }};
-        subsets s = new subsets();
-        ArrayList<ArrayList<Integer>> r = new ArrayList<ArrayList<Integer>>();
-        r = s.subsets(inputs);
+		ArrayList<Integer> inputs = new ArrayList<Integer>() {{
+			add(1);
+			add(2);
+			add(3);
+		}};
+		ArrayList<ArrayList<Integer>> outputs = new ArrayList<ArrayList<Integer>>() {{
+			add(new ArrayList<Integer>() {{
+				add(3);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(1);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(2);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(1);
+				add(2);
+				add(3);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(1);
+				add(3);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(2);
+				add(3);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(1);
+				add(2);
+			}});
+			add(new ArrayList<Integer>() {{
+			}});
+		}};
+		subsets s = new subsets();
+		ArrayList<ArrayList<Integer>> r = new ArrayList<ArrayList<Integer>>();
+		r = s.subsets(inputs);
 
-        System.out.println(r);
-        assertTrue(r.containsAll(outputs) && r.size() == outputs.size());
-    }
+		System.out.println(r);
+		assertTrue(r.containsAll(outputs) && r.size() == outputs.size());
+	}
 
-    @Test
-    public void testSubsets1() throws Exception {
-        int[] inputs = {1, 2, 3};
-        List<List<Integer>> outputs = new ArrayList<List<Integer>>() {{
-            add(new ArrayList<Integer>() {{
-                add(3);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(1);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(2);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(1);
-                add(2);
-                add(3);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(1);
-                add(3);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(2);
-                add(3);
-            }});
-            add(new ArrayList<Integer>() {{
-                add(1);
-                add(2);
-            }});
-            add(new ArrayList<Integer>() {{
-            }});
-        }};
-        subsets s = new subsets();
-        List<List<Integer>> r = new ArrayList<List<Integer>>();
-        r = s.subsets(inputs);
+	@Test
+	public void testSubsets1() throws Exception {
+		int[] inputs = {1, 2, 3};
+		List<List<Integer>> outputs = new ArrayList<List<Integer>>() {{
+			add(new ArrayList<Integer>() {{
+				add(3);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(1);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(2);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(1);
+				add(2);
+				add(3);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(1);
+				add(3);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(2);
+				add(3);
+			}});
+			add(new ArrayList<Integer>() {{
+				add(1);
+				add(2);
+			}});
+			add(new ArrayList<Integer>() {{
+			}});
+		}};
+		subsets s = new subsets();
+		List<List<Integer>> r = new ArrayList<List<Integer>>();
+		r = s.subsets(inputs);
 
-        System.out.println(r);
-        assertTrue(r.containsAll(outputs) && r.size() == outputs.size());
-    }
+		System.out.println(r);
+		assertTrue(r.containsAll(outputs) && r.size() == outputs.size());
+	}
 }

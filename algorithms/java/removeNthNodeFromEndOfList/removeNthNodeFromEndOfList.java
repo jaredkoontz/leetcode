@@ -10,44 +10,44 @@ public class removeNthNodeFromEndOfList {
 
     /*Since the question gives that n is valid, not too many checks have to be put in place. Otherwise, this would be necessary.*/
 
-    public ListNode removeNthFromEndSmart(ListNode head, int n) {
+	public ListNode removeNthFromEndSmart(ListNode head, int n) {
 
-        ListNode start = new ListNode(0);
-        ListNode slow = start, fast = start;
-        slow.next = head;
+		ListNode start = new ListNode(0);
+		ListNode slow = start, fast = start;
+		slow.next = head;
 
-        //Move fast in front so that the gap between slow and fast becomes n
-        for (int i = 1; i <= n + 1; i++) {
-            fast = fast.next;
-        }
-        //Move fast to the end, maintaining the gap
-        while (fast != null) {
-            slow = slow.next;
-            fast = fast.next;
-        }
-        //Skip the desired node
-        slow.next = slow.next.next;
-        return start.next;
-    }
+		//Move fast in front so that the gap between slow and fast becomes n
+		for (int i = 1; i <= n + 1; i++) {
+			fast = fast.next;
+		}
+		//Move fast to the end, maintaining the gap
+		while (fast != null) {
+			slow = slow.next;
+			fast = fast.next;
+		}
+		//Skip the desired node
+		slow.next = slow.next.next;
+		return start.next;
+	}
 
-    public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode fast = head;
-        ListNode slow = head;
-        while (fast != null) {
-            fast = fast.next;
-            if (n-- < 0) {
-                slow = slow.next;
-            }
-        }
+	public ListNode removeNthFromEnd(ListNode head, int n) {
+		ListNode fast = head;
+		ListNode slow = head;
+		while (fast != null) {
+			fast = fast.next;
+			if (n-- < 0) {
+				slow = slow.next;
+			}
+		}
 
-        if (n == 0) {
-            head = head.next;
-        } else if (n < 0) {
-            slow.next = slow.next.next;
-        } else {
-            return null;
-        }
+		if (n == 0) {
+			head = head.next;
+		} else if (n < 0) {
+			slow.next = slow.next.next;
+		} else {
+			return null;
+		}
 
-        return head;
-    }
+		return head;
+	}
 }
