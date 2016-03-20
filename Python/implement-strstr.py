@@ -1,5 +1,5 @@
-# Time:  O(n + m)
-# Space: O(m)
+# Time:  O(n + k)
+# Space: O(k)
 #
 # Implement strStr().
 # 
@@ -9,22 +9,17 @@
 
 # Wiki of KMP algorithm:
 # http://en.wikipedia.org/wiki/Knuth-Morris-Pratt_algorithm
-class Solution:
-    # @param haystack, a string
-    # @param needle, a string
-    # @return a string or None
+class Solution(object):
     def strStr(self, haystack, needle):
+        """
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+        """
         if not needle:
             return 0
             
-        if len(haystack) < len(needle):
-            return -1
-        
-        i = self.KMP(haystack, needle)
-        if i > -1:
-            return i
-        else:
-            return -1
+        return self.KMP(haystack, needle)
     
     def KMP(self, text, pattern):
         prefix = self.getPrefix(pattern)
@@ -49,17 +44,19 @@ class Solution:
             prefix[i] = j
         return prefix
     
-# Time:  (n * m)
-# Space: (1)
-class Solution2:
-    # @param haystack, a string
-    # @param needle, a string
-    # @return a string or None
+# Time:  O(n * k)
+# Space: O(k)
+class Solution2(object):
     def strStr(self, haystack, needle):
+        """
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+        """
         for i in xrange(len(haystack) - len(needle) + 1):
             if haystack[i : i + len(needle)] == needle:
-                return haystack[i:]
-        return None
+                return i
+        return -1
     
 if __name__ == "__main__":
     print Solution().strStr("a", "")
