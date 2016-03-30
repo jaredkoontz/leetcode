@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-338%20%2F%20338-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-339%20%2F%20339-ff69b4.svg)
 
-Up to date (2016-03-17), there are `321` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-03-30), there are `322` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `338` questions.
+Here is the classification of all `339` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -143,10 +143,10 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 20| [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [C++](./C++/valid-parentheses.cpp) [Python](./Python/valid-parentheses.py) | _O(n)_        | _O(n)_          | Easy           ||
-32| [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)| [Python](./Python/longest-valid-parentheses.py) | _O(n)_ | _O(1)_ | Hard   ||
-71| [Simplify Path](https://leetcode.com/problems/simplify-path/)| [Python](./Python/simplify-path.py) | _O(n)_        | _O(n)_          | Medium         ||
-101| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)| [Python](./Python/symmetric-tree.py) | _O(n)_      | _O(h)_          | Easy           ||
-150| [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)| [Python](./Python/evaluate-reverse-polish-notation.py)| _O(n)_| _O(n)_| Medium          ||
+32| [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)| [C++](./C++/longest-valid-parentheses.cpp) [Python](./Python/longest-valid-parentheses.py) | _O(n)_ | _O(1)_ | Hard   ||
+71| [Simplify Path](https://leetcode.com/problems/simplify-path/)| [C++](./C++/simplify-path.cpp) [Python](./Python/simplify-path.py) | _O(n)_        | _O(n)_          | Medium         ||
+101| [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)| [C++](./C++/symmetric-tree.cpp) [Python](./Python/symmetric-tree.py) | _O(n)_      | _O(h)_          | Easy           ||
+150| [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)| [C++](./C++/evaluate-reverse-polish-notation.cpp) [Python](./Python/evaluate-reverse-polish-notation.py)| _O(n)_| _O(n)_| Medium          ||
 155| [Min Stack](https://leetcode.com/problems/min-stack/)     | [Python](./Python/min-stack.py)  | _O(n)_          | _O(1)_          | Easy           ||
 173| [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [Python](./Python/binary-search-tree-iterator.py) | _O(1)_| _O(h)_| Medium ||   
 224| [Basic Calculator](https://leetcode.com/problems/basic-calculator/) | [C++](./C++/basic-calculator.cpp) [Python](./Python/basic-calculator.py) | _O(n)_| _O(n)_| Medium || 
@@ -220,7 +220,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Data Structure
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-146| [LRU Cache](https://leetcode.com/problems/lru-cache/)     | [Python](./Python/lru-cache.py)  | _O(1)_          | _O(n)_          | Hard         ||
+146| [LRU Cache](https://leetcode.com/problems/lru-cache/)     | [C++](./C++/lru-cache.cpp) [Python](./Python/lru-cache.py)  | _O(1)_          | _O(k)_          | Hard         ||
 225| [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)     | [C++](./C++/implement-stack-using-queues.cpp) [Python](./Python/implement-stack-using-queues.py)  | push: _O(n)_, pop: _O(1)_, top: _O(1)_ | _O(n)_          | Medium         ||
 
 ## Math
@@ -367,6 +367,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 301| [Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/) | [C++](./C++/remove-invalid-parentheses.cpp)  [Python](./Python/remove-invalid-parentheses.py)  | _O(C(n, c))_ | _O(c)_ | Medium         |||
 329| [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [C++](./C++/longest-increasing-path-in-a-matrix.cpp)  [Python](./Python/longest-increasing-path-in-a-matrix.py)  | _O(m * n)_ | _O(m * n)_ | Medium         |||
 332| [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | [C++](./C++/reconstruct-itinerary.cpp)  [Python](./Python/reconstruct-itinerary.py)  | _O(t! / (n1! * n2! * ... nk!))_ | _O(t)_ | Medium         |||
+339| [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) | [C++](./C++/nested-list-weight-sum.cpp)  [Python](./Python/nested-list-weight-sum.py)  | _O(n)_ | _O(h)_ | Easy         |📖||
 
 ## Backtracking
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
