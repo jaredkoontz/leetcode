@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-339%20%2F%20339-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-340%20%2F%20340-ff69b4.svg)
 
-Up to date (2016-03-30), there are `322` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-04-03), there are `323` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `339` questions.
+Here is the classification of all `340` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -173,7 +173,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Tree
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)  | [Python](./Python/binary-tree-inorder-traversal.py) | _O(n)_| _O(1)_| Medium           || `Morris Traversal` | 
+94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)  | [C++](./C++/binary-tree-inorder-traversal.cpp) [Python](./Python/binary-tree-inorder-traversal.py) | _O(n)_| _O(1)_| Medium           || `Morris Traversal` | 
 99 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/) | [Python](./Python/recover-binary-search-tree.py) | _O(n)_| _O(1)_| Hard  || `Morris Traversal` 
 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | [Python](./Python/binary-tree-preorder-traversal.py) | _O(n)_| _O(1)_| Medium || `Morris Traversal` 
 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) | [Python](./Python/binary-tree-postorder-traversal.py) | _O(n)_| _O(1)_| Hard  || `Morris Traversal` 
@@ -196,7 +196,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 49| [Group Anagrams](https://leetcode.com/problems/anagrams/)     | [Python](./Python/anagrams.py)   | _O(nlogg)_          | _O(n)_          | Medium         ||
 76| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [Python](./Python/minimum-window-substring.py) | _O(n)_ | _O(k)_ | Hard          ||
 149| [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | [Python](./Python/max-points-on-a-line.py) | _O(n^2)_ | _O(n)_ | Hard          ||
-159| [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)| [Python](./Python/longest-substring-with-at-most-two-distinct-characters.py) | _O(n^2)_ | _O(1)_ | Hard         |📖|
+159| [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)| [C++](./C++/longest-substring-with-at-most-two-distinct-characters.cpp) [Python](./Python/longest-substring-with-at-most-two-distinct-characters.py) | _O(n)_ | _O(1)_ | Hard         |📖|
 170| [Two Sum III - Data structure design](https://leetcode.com/problems/two-sum-iii-data-structure-design/) | [Python](./Python/two-sum-iii-data-structure-design.py) | _O(n)_ | _O(n)_ | Easy | 📖 |
 187| [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | [Python](./Python/repeated-dna-sequences.py) | _O(n)_       | _O(n)_          | Medium         ||
 202| [Happy Number](https://leetcode.com/problems/happy-number/)      | [C++](./C++/happy-number.cpp) [Python](./Python/happy-number.py)   | _O(k)_  | _O(k)_          | Easy          ||
@@ -216,6 +216,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 323| [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [C++](./C++/number-of-connected-components-in-an-undirected-graph.cpp) [Python](./Python/number-of-connected-components-in-an-undirected-graph.py) | _O(n)_ | _O(n)_| Medium         | 📖 | Union Find
 325| [Maximum Size Subarray Sum Equals k](https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/) | [C++](./C++/maximum-size-subarray-sum-equals-k.cpp) [Python](./Python/maximum-size-subarray-sum-equals-k.py) | _O(n)_ | _O(n)_|  Easy         | 📖 | 
 336| [Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/) | [C++](./C++/palindrome-pairs.cpp) [Python](./Python/palindrome-pairs.py) | _O(n * k^2)_          | _O(n * k)_          | Hard             | | |
+340| [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)|  [C++](./C++/longest-substring-with-at-most-k-distinct-characters.cpp) [Python](./Python/longest-substring-with-at-most-k-distinct-characters.py) | _O(n)_ | _O(1)_ | Hard         |📖|
 
 ## Data Structure
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
