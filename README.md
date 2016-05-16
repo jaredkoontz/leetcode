@@ -22,7 +22,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 * [Math](https://github.com/kamyu104/LeetCode#math)
 * [Two Pointers](https://github.com/kamyu104/LeetCode#two-pointers)
 * [Sort](https://github.com/kamyu104/LeetCode#sort)
-* [Divide and Conquer](https://github.com/kamyu104/LeetCode#divide-and-conquer)
+* [Recursion](https://github.com/kamyu104/LeetCode#recursion)
 * [Binary Search](https://github.com/kamyu104/LeetCode#binary-search)
 * [Binary Search Tree](https://github.com/kamyu104/LeetCode#binary-search-tree)
 * [Breadth-First Search](https://github.com/kamyu104/LeetCode#breadth-first-search)
@@ -88,7 +88,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [C++](./C++/product-of-array-except-self.cpp)  [Python](./Python/product-of-array-except-self.py) | _O(n)_ | _O(1)_          | Medium           | LintCode |
 240 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [C++](./C++/search-a-2d-matrix-ii.cpp) [Python](./Python/search-a-2d-matrix-ii.py) | _O(m + n)_ | _O(1)_ | Medium   | EPI, LintCode |
 243| [Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance/)     | [C++](./C++/shortest-word-distance.cpp) [Python](./Python/shortest-word-distance.py)  | _O(n)_ |  _O(1)_ | Easy         |📖||
-245| [Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance III/)     | [C++](./C++/shortest-word-distance-iii.cpp) [Python](./Python/shortest-word-distance-iii.py)  | _O(n)_ |  _O(1)_ | Medium         |📖||
+245| [Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii/)     | [C++](./C++/shortest-word-distance-iii.cpp) [Python](./Python/shortest-word-distance-iii.py)  | _O(n)_ |  _O(1)_ | Medium         |📖||
 251| [Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/) | [C++](./C++/flatten-2d-vector.cpp) [Python](./Python/flatten-2d-vector.py)  | _O(1)_ |  _O(1)_ | Medium         |📖||
 277| [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) | [C++](./C++/find-the-celebrity.cpp) [Python](./Python/find-the-celebrity.py)  | _O(n)_ |  _O(1)_ | Medium         |📖, EPI ||
 289| [Game of Life](https://leetcode.com/problems/game-of-life/) | [C++](./C++/game-of-life.cpp) [Python](./Python/game-of-life.py)  | _O(m * n)_ |  _O(1)_ | Medium         |||
@@ -271,7 +271,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 274| [H-Index](https://leetcode.com/problems/h-index/) | [C++](./C++/h-index.cpp)  [Python](./Python/h-index.py)  | _O(n)_ | _O(n)_ | Medium         || Counting Sort |
 280| [Wiggle Sort](https://leetcode.com/problems/wiggle-sort/) | [C++](./C++/wiggle-sort.cpp) [Python](./Python/wiggle-sort.py) | _O(n)_   | _O(1)_        | Medium         |📖| |
 324| [Wiggle Sort II](https://leetcode.com/problems/wiggle-sort-ii/) | [C++](./C++/wiggle-sort-ii.cpp) [Python](./Python/wiggle-sort-ii.py) | _O(n)_  on average | _O(1)_        | Medium         | variant of [Sort Colors](https://leetcode.com/problems/sort-colors/) | Tri Partition |
-347| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [C++](./C++/top-k-frequent-elements.cpp) [Python](./Python/top-k-frequent-elements.py) | _O(n)_  on average | _O(1)_        | Medium         | | Partition Sort |
+347| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [C++](./C++/top-k-frequent-elements.cpp) [Python](./Python/top-k-frequent-elements.py) | _O(n)_  on average | _O(1)_        | Medium         | | Quick Select |
 
 ## Two Pointers
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -288,7 +288,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 344| [Reverse String](https://leetcode.com/problems/reverse-string/) | [C++](./C++/reverse-string.cpp)  [Python](./Python/reverse-string.py) | _O(n)_ | _O(1)_ | Easy         | |
 345| [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | [C++](./C++/reverse-vowels-of-a-string.cpp)  [Python](./Python/reverse-vowels-of-a-string.py) | _O(n)_ | _O(1)_ | Easy         | |
 
-## Divide and Conquer
+## Recursion
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 95| [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/) | [Python](./Python/unique-binary-search-trees-ii.py) | _O(4^n / n^(3/2)_      | _O(4^n / n^(3/2)_         | Medium         ||
@@ -365,7 +365,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 113| [Path Sum II](https://leetcode.com/problems/path-sum-ii/)   | [Python](./Python/path-sum-ii.py) | _O(n)_         | _O(h)_          | Medium         ||
 199| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [Python](./Python/binary-tree-right-side-view.py) | _O(n)_     | _O(h)_ | Medium  ||
 200| [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Python](./Python/number-of-islands.py) | _O(m * n)_ | _O(m * n)_| Medium         ||
-236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [C++](./C++/lowest-common-ancestor-of-a-binary-tree.cpp) [Python](./Python/lowest-common-ancestor-of-a-binary-tree.py) | _O(h)_ | _O(h)_ | Medium | EPI |
+236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [C++](./C++/lowest-common-ancestor-of-a-binary-tree.cpp) [Python](./Python/lowest-common-ancestor-of-a-binary-tree.py) | _O(n)_ | _O(h)_ | Medium | EPI |
 247| [Strobogrammatic Number II](https://leetcode.com/problems/strobogrammatic-number-ii/) | [C++](./C++/strobogrammatic-number-ii.cpp)  [Python](./Python/strobogrammatic-number-ii.py)  | _O(n^2 * 5^(n/2))_ | _O(n)_ | Medium         |📖||
 250| [Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees) | [C++](./C++/count-univalue-subtrees.cpp)  [Python](./Python/count-univalue-subtrees.py)  | _O(n)_ | _O(h)_ | Medium         |📖||
 257| [Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/) | [C++](./C++/binary-tree-paths.cpp)  [Python](./Python/binary-tree-paths.py)  | _O(n * h)_ | _O(h)_ | Easy         |||
