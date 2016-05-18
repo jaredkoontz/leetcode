@@ -1,4 +1,4 @@
-# Time:  O(nlogg) = O(n / g * glogg), g is max size of groups
+# Time:  O(n * glogg), g is the max size of groups.
 # Space: O(n)
 #
 # Given an array of strings, return all groups of strings that are anagrams.
@@ -20,7 +20,8 @@ class Solution(object):
             anagram.sort()
             result.append(anagram)
         return result
-        
+
+
 if __name__ == "__main__":
     result = Solution().anagrams(["cat", "dog", "act", "mac"])
     print result
