@@ -1,10 +1,39 @@
-// Time:  O(nlogn)
-// Space: O(1)
+// Time:  O(m + n)
+// Space: O(min(m, n))
 
+// Hash solution.
 class Solution {
 public:
     vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
-        vector<int> res;
+        if (nums1.size() > nums2.size()) {
+            return intersection(nums2, nums1);
+        }
+
+        unordered_set<int> lookup;
+        for (const auto& i : nums1) {
+            lookup.emplace(i);
+        }
+
+        vector<int> result;
+        for (const auto& i : nums2) {
+            if (lookup.count(i)) {
+                result.emplace_back(i);
+                lookup.erase(i);
+            }
+        }
+
+        return result;
+    }
+};
+
+
+// Time:  O(max(m, n) * log(max(m, n)))
+// Space: O(1)
+// Two pointers solution.
+class Solution2 {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        vector<int> result;
         sort(nums1.begin(), nums1.end());
         sort(nums2.begin(), nums2.end());
         auto it1 = nums1.cbegin(), it2 = nums2.cbegin();
@@ -14,12 +43,12 @@ public:
             } else if (*it1 > *it2) {
                 ++it2;
             } else {
-                if (res.empty() || res.back() != *it1) {
-                    res.emplace_back(*it1);
+                if (result.empty() || result.back() != *it1) {
+                    result.emplace_back(*it1);
                 }
                 ++it1, ++it2;
             }
         }
-        return res;
+        return result;
     }
 };
