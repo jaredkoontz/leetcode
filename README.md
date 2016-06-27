@@ -1,8 +1,8 @@
-# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-365%20%2F%20365-ff69b4.svg)
+# [LeetCode](https://leetcode.com/problemset/algorithms/) ![Language](https://img.shields.io/badge/language-Python%20%2F%20C++%2011-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) ![Progress](https://img.shields.io/badge/progress-368%20%2F%20368-ff69b4.svg)
 
-Up to date (2016-06-24), there are `348` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
+Up to date (2016-06-27), there are `351` Algorithms / `13` Database / `4` Shell questions on [LeetCode Online Judge](https://leetcode.com/). 
 The number of questions is increasing recently.
-Here is the classification of all `365` questions.
+Here is the classification of all `368` questions.
 For more questions and solutions, you can see my [LintCode](https://github.com/kamyu104/LintCode) repository.
 I'll keep updating for full summary and better solutions. Stay tuned for updates.
 (Notes: "📖" means you need to subscribe to [LeetCode premium membership](https://leetcode.com/subscribe/) for the access to premium questions. )
@@ -340,6 +340,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 302| [Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/)| [C++](./C++/smallest-rectangle-enclosing-black-pixels.cpp) [Python](./Python/smallest-rectangle-enclosing-black-pixels.py)   | _O(nlogn)_          | _O(1)_          | Medium         | 📖 |
 354| [Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/) | [C++](./C++/russian-doll-envelopes.cpp)  [Python](./Python/russian-doll-envelopes.py)  | _O(nlogn)_ | _O(1)_ | Hard         |||
 363| [Max Sum of Rectangle No Larger Than K](https://leetcode.com/problems/max-sum-of-sub-matrix-no-larger-than-k/) | [C++](./C++/max-sum-of-sub-matrix-no-larger-than-k.cpp)  [Python](./Python/max-sum-of-sub-matrix-no-larger-than-k.py)  | _O(min(m, n)^2 * max(m, n) * logn(max(m, n)))_ | _O(max(m, n))_ | Hard         |||
+367| [Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)| [C++](./C++/valid-perfect-square.cpp) [Python](./Python/valid-perfect-square.py)   | _O(logn)_          | _O(1)_          | Medium         | |
 
 ## Binary Search Tree
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -386,6 +387,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 332| [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/) | [C++](./C++/reconstruct-itinerary.cpp)  [Python](./Python/reconstruct-itinerary.py)  | _O(t! / (n1! * n2! * ... nk!))_ | _O(t)_ | Medium         |||
 339| [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) | [C++](./C++/nested-list-weight-sum.cpp)  [Python](./Python/nested-list-weight-sum.py)  | _O(n)_ | _O(h)_ | Easy         |📖||
 364| [Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii/) | [C++](./C++/nested-list-weight-sum-ii.cpp)  [Python](./Python/nested-list-weight-sum-ii.py)  | _O(n)_ | _O(h)_ | Medium         |📖||
+366| [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [C++](./C++/find-leaves-of-binary-tree.cpp)  [Python](./Python/find-leaves-of-binary-tree.py)  | _O(n)_ | _O(h)_ | Medium         |📖||
 
 ## Backtracking
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -452,6 +454,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 351| [Android Unlock Patterns](https://leetcode.com/problems/android-unlock-patterns/) | [C++](./C++/android-unlock-patterns.cpp) [Python](./Python/android-unlock-patterns.py) | _O(9^2 * 2^9)_ | _O(9 * 2^9)_ | Medium | 📖 | Backtracking |
 357| [Count Numbers with Unique Digits](https://leetcode.com/problems/count-numbers-with-unique-digits/) | [C++](./C++/count-numbers-with-unique-digits.cpp) [Python](./Python/count-numbers-with-unique-digits.py) | _O(n)_ | _O(1)_ | Medium || Backtracking, Math |
 361| [Bomb Enemy](https://leetcode.com/problems/bomb-enemy/) | [C++](./C++/bomb-enemy.cpp) [Python](./Python/bomb-enemy.py) | _O(m * n)_ | _O(m * n)_ | Medium | 📖 | |
+368| [Largest Divisible Subset](https://leetcode.com/problems/largest-divisible-subset/) | [C++](./C++/largest-divisible-subset.cpp) [Python](./Python/largest-divisible-subset.py) | _O(n^2)_ | _O(n)_ | Medium | | |
 
 ## Greedy
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
