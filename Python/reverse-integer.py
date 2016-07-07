@@ -1,4 +1,4 @@
-# Time: O(logn)
+# Time:  O(logn)
 # Space: O(1)
 #
 # Reverse digits of an integer.
@@ -20,18 +20,22 @@
 # You would then have to re-design the function (ie, add an extra parameter).
 #
 
-class Solution:
-    # @return an integer
+class Solution(object):
     def reverse(self, x):
-        ans = 0
-        if x >= 0:
-            while x:
-                ans = ans * 10 + x % 10
-                x /= 10
-            return ans if ans <= 2147483647 else 0  # Handle overflow.
-        else:
+        """
+        :type x: int
+        :rtype: int
+        """
+        if x < 0:
             return -self.reverse(-x)
-        
+
+        result = 0
+        while x:
+            result = result * 10 + x % 10
+            x /= 10
+        return result if result <= 0x7fffffff else 0  # Handle overflow.
+
+    
 if __name__ == "__main__":
     print Solution().reverse(123)
     print Solution().reverse(-321)
