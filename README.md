@@ -237,24 +237,24 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 ## Math
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
-7| [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./C++/reverse-integer.cpp) [Python](./Python/reverse-integer.py) | _O(logn)_ | _O(1)_         | Easy           ||
+7| [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [C++](./C++/reverse-integer.cpp) [Python](./Python/reverse-integer.py) | _O(1)_ | _O(1)_         | Easy           ||
 9| [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | [C++](./C++/palindrome-number.cpp) [Python](./Python/palindrome-number.py) | _O(1)_ | _O(1)_        | Easy           ||
-12| [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [Python](./Python/integer-to-roman.py) | _O(n)_ | _O(1)_          | Medium         ||
-13| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Python](./Python/roman-to-integer.py) | _O(n)_ | _O(1)_          | Easy           ||
-29| [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | [Python](./Python/divide-two-integers.py)    | _O(logn)_       | _O(1)_         | Medium         ||
-50| [Pow(x, n)](https://leetcode.com/problems/powx-n/)     | [C++](./C++/powx-n.cpp) [Python](./Python/powx-n.py)     | _O(logn)_       | _O(1)_       | Medium         ||
+12| [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | [C++](./C++/integer-to-roman.cpp) [Python](./Python/integer-to-roman.py) | _O(n)_ | _O(1)_          | Medium         ||
+13| [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [C++](./C++/roman-to-integer.cpp) [Python](./Python/roman-to-integer.py) | _O(n)_ | _O(1)_          | Easy           ||
+29| [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | [C++](./C++/divide-two-integers.cpp) [Python](./Python/divide-two-integers.py)    | _O(1)_       | _O(1)_         | Medium         ||
+50| [Pow(x, n)](https://leetcode.com/problems/powx-n/)     | [C++](./C++/powx-n.cpp) [Python](./Python/powx-n.py)     | _O(1)_       | _O(1)_       | Medium         ||
 60| [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) | [Python](./Python/permutation-sequence.py) | _O(n^2)_ | _O(n)_  | Medium         || `Cantor Ordering`
 65| [Valid Number](https://leetcode.com/problems/valid-number/) | [Python](./Python/valid-number.py) | _O(n)_         | _O(1)_          | Hard           || `Automata`
 89| [Gray Code](https://leetcode.com/problems/gray-code/)     | [Python](./Python/gray-code.py)  | _O(2^n)_        | _O(1)_          | Medium         ||
 166| [Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) | [Python](./Python/fraction-to-recurring-decimal.py)  | _O(logn)_ | _O(1)_ | Medium         ||
 168| [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/) | [Python](./Python/excel-sheet-column-title.py) | _O(logn)_ | _O(1)_ | Easy ||
 171| [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/) | [Python](./Python/excel-sheet-column-number.py) | _O(n)_ | _O(1)_ | Easy  ||
-172| [Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | [Python](./Python/factorial-trailing-zeroes.py)  | _O(logn)_ | _O(1)_ | Easy         ||
+172| [Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) | [Python](./Python/factorial-trailing-zeroes.py)  | _O(1)_ | _O(1)_ | Easy         ||
 223| [Rectangle Area](https://leetcode.com/problems/rectangle-area/) | [C++](./C++/rectangle-area.cpp)  [Python](./Python/rectangle-area.py)  | _O(1)_ | _O(1)_ | Easy         ||
-233| [Number of Digit One](https://leetcode.com/problems/number-of-digit-one/) | [C++](./C++/number-of-digit-one.cpp)  [Python](./Python/number-of-digit-one.py)  | _O(logn)_ | _O(1)_ | Medium        | CTCI, LintCode|
+233| [Number of Digit One](https://leetcode.com/problems/number-of-digit-one/) | [C++](./C++/number-of-digit-one.cpp)  [Python](./Python/number-of-digit-one.py)  | _O(1)_ | _O(1)_ | Medium        | CTCI, LintCode|
 248| [Strobogrammatic Number III](https://leetcode.com/problems/strobogrammatic-number-iii/) | [C++](./C++/strobogrammatic-number-iii.cpp)  [Python](./Python/strobogrammatic-number-iii.py)  | _O(5^(n/2))_ | _O(n)_ | Hard         |📖||
 258| [Add Digits](https://leetcode.com/problems/add-digits/) | [C++](./C++/add-digits.cpp)  [Python](./Python/add-digits.py)  | _O(1)_ | _O(1)_ | Easy         |||
-263| [Ugly Number](https://leetcode.com/problems/ugly-number/) | [C++](./C++/ugly-number.cpp)  [Python](./Python/ugly-number.py)  | _O(logn)_ | _O(1)_ | Easy         |||
+263| [Ugly Number](https://leetcode.com/problems/ugly-number/) | [C++](./C++/ugly-number.cpp)  [Python](./Python/ugly-number.py)  | _O(1)_ | _O(1)_ | Easy         |||
 292| [Nim Game](https://leetcode.com/problems/nim-game/) | [C++](./C++/nim-game.cpp)  [Python](./Python/nim-game.py)  | _O(1)_ | _O(1)_ | Easy         | LintCode ||
 319 | [Bulb Switcher](https://leetcode.com/problems/bulb-switcher/) | [C++](./C++/bulb-switcher.cpp) [Python](./Python/bulb-switcher.py) | _O(1)_ | _O(1)_ | Medium |||
 326 | [Power of Three](https://leetcode.com/problems/power-of-three/) | [C++](./C++/power-of-three.cpp) [Python](./Python/power-of-three.py) | _O(1)_ | _O(1)_ | Easy |||
