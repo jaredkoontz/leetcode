@@ -280,7 +280,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 147| [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/)|[C++](./C++/insertion-sort-list.cpp) [Python](./Python/insertion-sort-list.py) | _O(n^2)_ | _O(1)_    | Medium         ||
 148| [Sort List](https://leetcode.com/problems/sort-list/)     | [C++](./C++/sort-list.cpp) [Python](./Python/sort-list.py)  | _O(nlogn)_      | _O(logn)_       | Medium         ||
 164| [Maximum Gap](https://leetcode.com/problems/maximum-gap/)   | [C++](./C++/maximum-gap.cpp) [Python](./Python/maximum-gap.py)| _O(n)_          | _O(n)_          | Hard           || Tricky 
-179| [Largest Number](https://leetcode.com/problems/largest-number/) | [Python](./Python/largest-number.py) | _O(nlogn)_   | _O(1)_        | Medium         ||
+179| [Largest Number](https://leetcode.com/problems/largest-number/) | [C++](./C++/largest-number.cpp) [Python](./Python/largest-number.py) | _O(nlogn)_   | _O(1)_        | Medium         ||
 218| [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | [C++](./C++/the-skyline-problem.cpp) [Python](./Python/the-skyline-problem.py) | _O(nlogn)_   | _O(n)_        | Hard         || Sort, BST|
 252| [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [C++](./C++/meeting-rooms.cpp) [Python](./Python/meeting-rooms.py) | _O(nlogn)_   | _O(n)_        | Easy         |📖| |
 253| [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | [C++](./C++/meeting-rooms-ii.cpp) [Python](./Python/meeting-rooms-ii.py) | _O(nlogn)_   | _O(n)_        | Medium         |📖| |
@@ -336,7 +336,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 -----|---------------- | --------------- | --------------- | --------------- | ------------- |--------------| -----
 4| [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | [C++](./C++/median-of-two-sorted-arrays.cpp)  [Python](./Python/median-of-two-sorted-arrays.py) | _O(log(min(m, n)))_ | _O(1)_ | Hard         ||
 33| [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | [C++](./C++/search-in-rotated-sorted-array.cpp) [Python](./Python/search-in-rotated-sorted-array.py) | _O(logn)_ | _O(1)_   | Hard         ||
-34| [Search for a Range](https://leetcode.com/problems/search-for-a-range/) | [Python](./Python/search-for-a-range.py) | _O(logn)_ | _O(1)_   | Medium         ||
+34| [Search for a Range](https://leetcode.com/problems/search-for-a-range/) | [C++](./C++/search-for-a-range.cpp) [Python](./Python/search-for-a-range.py) | _O(logn)_ | _O(1)_   | Medium         ||
 35| [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Python](./Python/search-insert-position.py) | _O(logn)_ | _O(1)_   | Medium         ||
 69| [Sqrt(x)](https://leetcode.com/problems/sqrtx/)       | [Python](./Python/sqrtx.py)      | _O(logn)_        | _O(1)_         | Medium         ||
 74| [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [Python](./Python/search-a-2d-matrix.py) | _O(logm + logn)_ | _O(1)_ | Medium   ||
