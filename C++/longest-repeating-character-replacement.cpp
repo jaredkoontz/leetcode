@@ -1,5 +1,5 @@
 // Time:  O(n)
-// Space: O()
+// Space: O(1)
 
 class Solution {
 public:
@@ -13,10 +13,10 @@ public:
                 --times;
                 if (times < 0) {
                     res = max(res, j - i);
-                    while (i < j && k - (j - i + 1 - cache[s[i] - 'A']) < 0) {
+                    while (i < j && times < 0) {
                         --cache[s[i++] - 'A'];
+                        times = k - (j - i + 1 - cache[s[i] - 'A']);
                     }
-                    times = k - (j - i + 1 - cache[s[i] - 'A']);
                 }
             }
         }
