@@ -61,6 +61,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 401 | [Binary Watch](https://leetcode.com/problems/binary-watch/) | [C++](./C++/binary-watch.cpp) [Python](./Python/binary-watch.py) | _O(1)_ | _O(1)_ | Easy | |
 411 | [Minimum Unique Word Abbreviation](https://leetcode.com/problems/minimum-unique-word-abbreviation/) | [C++](./C++/minimum-unique-word-abbreviation.cpp) [Python](./Python/minimum-unique-word-abbreviation.py) | _O(2^n)_ | _O(n)_ | Hard | 📖 |
 421 | [Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/) | [C++](./C++/maximum-xor-of-two-numbers-in-an-array.cpp) [Python](./Python/maximum-xor-of-two-numbers-in-an-array.py) | _O(n)_ | _O(1)_ | Medium ||
+461 | [Hamming Distance](https://leetcode.com/problems/hamming-distance/) | [C++](./C++/hamming-distance.cpp) [Python](./Python/hamming-distance.py) | _O(1)_ | _O(1)_ | Easy ||
+462 | [Minimum Moves to Equal Array Elements II](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/) | [C++](./C++/minimum-moves-to-equal-array-elements-ii.cpp) [Python](./Python/minimum-moves-to-equal-array-elements-ii.py) | _O(n)_  on average | _O(1)_ | Medium ||
+477 | [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) | [C++](./C++/total-hamming-distance.cpp) [Python](./Python/total-hamming-distance.py) | _O(n)_ | _O(1)_ | Medium ||
 
 ## Array
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -141,6 +144,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 408| [Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/) | [C++](./C++/valid-word-abbreviation.cpp)  [Python](./Python/valid-word-abbreviation.py) | _O(n)_ | _O(1)_ | Easy         | 📖 |
 415| [Add Strings](https://leetcode.com/problems/add-strings/) | [C++](./C++/add-strings.cpp)  [Python](./Python/add-strings.py) | _O(n)_ | _O(1)_ | Easy         | |
 420| [Strong Password Checker](https://leetcode.com/problems/strong-password-checker/) | [C++](./C++/strong-password-checker.cpp)  [Python](./Python/strong-password-checker.py) | _O(n)_ | _O(1)_ | Hard         | |
+434| [Number of Segments in a String](https://leetcode.com/problems/number-of-segments-in-a-string/) | [C++](./C++/number-of-segments-in-a-string.cpp)  [Python](./Python/number-of-segments-in-a-string.py) | _O(n)_ | _O(1)_ | Easy         | |
+459| [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/) | [C++](./C++/repeated-substring-pattern.cpp)  [Python](./Python/repeated-substring-pattern.py) | _O(n)_ | _O(n)_ | Easy         || `KMP Algorithm` |
+468| [Validate IP Address](https://leetcode.com/problems/validate-ip-address/) | [C++](./C++/validate-ip-address.cpp)  [Python](./Python/validate-ip-address.py) | _O(1)_ | _O(1)_ | Medium         | |
 
 ## Linked List
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -186,6 +192,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 385| [Mini Parser](https://leetcode.com/problems/mini-parser/)| [C++](./C++/mini-parser.cpp) [Python](./Python/mini-parser.py) | _O(n)_        | _O(h)_          | Medium           |||
 394| [Decode String](https://leetcode.com/problems/decode-string/)| [C++](./C++/decode-string.cpp) [Python](./Python/decode-string.py) | _O(n)_        | _O(h)_          | Medium           |||
 439| [Ternary Expression Parser](https://leetcode.com/problems/ternary-expression-parser/) | [C++](./C++/ternary-expression-parser.cpp) [Python](./Python/ternary-expression-parser.py) | _O(n)_          | _O(1)_          | Medium           |📖|
+456| [132 Pattern](https://leetcode.com/problems/132-pattern/) | [C++](./C++/132-pattern.cpp) [Python](./Python/132-pattern.py) | _O(n)_          | _O(n)_          | Medium           ||
 
 ## Queue
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -257,6 +264,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 409| [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [C++](./C++/longest-palindrome.cpp) [Python](./Python/longest-palindrome.py) | _O(n)_| _O(1)_| Easy |||
 424| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | [C++](./C++/longest-repeating-character-replacement.cpp) [Python](./Python/longest-repeating-character-replacement.py) | _O(n)_| _O(1)_| Medium |||
 438| [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [C++](./C++/find-all-anagrams-in-a-string.cpp) [Python](./Python/find-all-anagrams-in-a-string.py) | _O(n)_          | _O(1)_          | Easy           ||
+447| [Number of Boomerangs](https://leetcode.com/problems/number-of-boomerangs/) | [C++](./C++/number-of-boomerangs.cpp) [Python](./Python/number-of-boomerangs.py) | _O(n^2)_          | _O(n)_          | Easy           ||
+454| [4Sum II](https://leetcode.com/problems/4sum-ii/) | [C++](./C++/4sum-ii.cpp) [Python](./Python/4sum-ii.py) | _O(n^2)_          | _O(n^2)_          | Medium           ||
+473| [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [C++](./C++/matchsticks-to-square.cpp) [Python](./Python/matchsticks-to-square.py) | _O(n * s * 2^n)_          | _O(n * (2^n + s))_          | Medium           ||
 
 ## Data Structure
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -302,6 +312,9 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 413 | [Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices/) | [C++](./C++/arithmetic-slices.cpp) [Python](./Python/arithmetic-slices.py) | _O(n)_ | _O(1)_ | Medium |||
 423 | [Reconstruct Original Digits from English](https://leetcode.com/problems/reconstruct-original-digits-from-english/) | [C++](./C++/reconstruct-original-digits-from-english.cpp) [Python](./Python/reconstruct-original-digits-from-english.py) | _O(n)_ | _O(1)_ | Medium | [GCJ2016 - Round 1B](https://code.google.com/codejam/contest/11254486/dashboard#s=p0)||
 441 | [Arranging Coins](https://leetcode.com/problems/arranging-coins/) | [C++](./C++/arranging-coins.cpp) [Python](./Python/arranging-coins.py) | _O(nlogn)_ | _O(1)_ | Easy || Binary Search|
+453 | [Minimum Moves to Equal Array Elements](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [C++](./C++/minimum-number-of-arrows-to-burst-balloons.cpp) [Python](./Python/minimum-number-of-arrows-to-burst-balloons.py) | _O(n)_ | _O(1)_ | Easy |||
+458 | [Poor Pigs](https://leetcode.com/problems/poor-pigs/) | [C++](./C++/poor-pigs.cpp) [Python](./Python/poor-pigs.py) | _O(n)_ | _O(1)_ | Easy |||
+469 | [Convex Polygon](https://leetcode.com/problems/convex-polygon/) | [C++](./C++/convex-polygon.cpp) [Python](./Python/convex-polygon.py) | _O(n)_ | _O(1)_ | Medium |📖||
 
 ## Sort
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -342,6 +355,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 349| [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [C++](./C++/intersection-of-two-arrays.cpp)  [Python](./Python/intersection-of-two-arrays.py) | _O(m + n)_ | _O(min(m, n))_ | Easy         | EPI | Hash, Binary Search
 350| [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) | [C++](./C++/intersection-of-two-arrays-ii.cpp)  [Python](./Python/intersection-of-two-arrays-ii.py) | _O(m + n)_ | _O(1)_ | Easy         | EPI | Hash, Binary Search
 360| [Sort Transformed Array](https://leetcode.com/problems/sort-transformed-array/) | [C++](./C++/sort-transformed-array.cpp)  [Python](./Python/sort-transformed-array.py) | _O(n)_ | _O(1)_ | Medium         |📖|
+457| [Circular Array Loop](https://leetcode.com/problems/circular-array-loop/) | [C++](./C++/circular-array-loop.cpp)  [Python](./Python/circular-array-loop.py) | _O(n)_ | _O(1)_ | Medium         ||
 
 ## Recursion
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -394,6 +408,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 374| [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)| [C++](./C++/guess-number-higher-or-lower.cpp) [Python](./Python/guess-number-higher-or-lower.py)   | _O(logn)_          | _O(1)_          | Easy         | |
 410| [Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum/)| [C++](./C++/split-array-largest-sum.cpp) [Python](./Python/split-array-largest-sum.py)   | _O(nlogs)_          | _O(1)_          | Hard         | |
 436 | [Find Right Interval](https://leetcode.com/problems/find-right-interval/) | [C++](./C++/find-right-interval.cpp) [Python](./Python/find-right-interval.py) | _O(nlogn)_ | _O(n)_ | Medium | |
+475 | [Heaters](https://leetcode.com/problems/heaters/) | [C++](./C++/heaters.cpp) [Python](./Python/heaters.py) | _O((m + n) * logn)_ | _O(1)_ | Easy | |
 
 ## Binary Search Tree
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -448,6 +463,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 399| [Evaluate Division](https://leetcode.com/problems/evaluate-division/) | [C++](./C++/evaluate-division.cpp)  [Python](./Python/evaluate-division.py)  | _O(q * \|V\|!)_ | _O(e)_ | Medium         |||
 417 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | [C++](./C++/pacific-atlantic-water-flow.cpp) [Python](./Python/pacific-atlantic-water-flow.py) | _O(m * n)_ | _O(m * n)_ | Medium ||
 440| [K-th Smallest in Lexicographical Order](https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/) | [C++](./C++/k-th-smallest-in-lexicographical-order.cpp) [Python](./Python/k-th-smallest-in-lexicographical-order.py) | _O(logn)_          | _O(logn)_          | Hard           ||
+464| [Can I Win](https://leetcode.com/problems/can-i-win/) | [C++](./C++/can-i-win.cpp) [Python](./Python/can-i-win.py) | _O(n!)_          | _O(n)_          | Medium           ||
 
 ## Backtracking
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -521,6 +537,13 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 403 | [Frog Jump](https://leetcode.com/problems/frog-jump/) | [C++](./C++/frog-jump.cpp) [Python](./Python/frog-jump.py) | _O(n)_ | _O(n) ~ O(n^2)_ | Hard ||
 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | [C++](./C++/partition-equal-subset-sum.cpp) [Python](./Python/partition-equal-subset-sum.py) | _O(n * s)_ | _O(s)_ | Medium ||
 418 | [Sentence Screen Fitting](https://leetcode.com/problems/sentence-screen-fitting/) | [C++](./C++/sentence-screen-fitting.cpp) [Python](./Python/sentence-screen-fitting.py) | _O(r + n * c)_ | _O(n)_ | Medium |📖|
+446 | [Arithmetic Slices II - Subsequence](https://leetcode.com/problems/arithmetic-slices-ii-subsequence/) | [C++](./C++/arithmetic-slices-ii-subsequence.cpp) [Python](./Python/arithmetic-slices-ii-subsequence.py) | _O(n^2)_ | _O(n * d)_ | Hard ||
+465 | [Optimal Account Balancing](https://leetcode.com/problems/optimal-account-balancing/) | [C++](./C++/optimal-account-balancing.cpp) [Python](./Python/optimal-account-balancing.py) | _O(n * 2^n)_ | _O(n * 2^n)_ | Hard |📖|
+466 | [Count The Repetitions](https://leetcode.com/problems/count-the-repetitions/) | [C++](./C++/count-the-repetitions.cpp) [Python](./Python/count-the-repetitions.py) | _O(s1 * min(s2, n1))_ | _O(s2)_ | Hard ||
+467 | [Unique Substrings in Wraparound String](https://leetcode.com/problems/unique-substrings-in-wraparound-string/) | [C++](./C++/unique-substrings-in-wraparound-string.cpp) [Python](./Python/unique-substrings-in-wraparound-string.py) | _O(n)_ | _O(1)_ | Medium ||
+471 | [Encode String with Shortest Length](https://leetcode.com/problems/encode-string-with-shortest-length/) | [C++](./C++/encode-string-with-shortest-length.cpp) [Python](./Python/encode-string-with-shortest-length.py) | _O(n^3)_ on average | _O(n^2)_ | Medium |📖|
+472 | [Concatenated Words](https://leetcode.com/problems/concatenated-words/) | [C++](./C++/concatenated-words.cpp) [Python](./Python/concatenated-words.py) | _O(n * l^2)_ | _O(n * l)_ | Medium ||
+474 | [Ones and Zeroes](https://leetcode.com/problems/ones-and-zeroes/) | [C++](./C++/ones-and-zeroes.cpp) [Python](./Python/ones-and-zeroes.py) | _O(s * m * n)_ | _O(m * n)_ | Medium ||
 
 ## Greedy
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
@@ -541,6 +564,8 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 397| [Integer Replacement](https://leetcode.com/problems/integer-replacement/)| [C++](./C++/integer-replacement.cpp) [Python](./Python/integer-replacement.py)   | _O(n)_          | _O(1)_          | Medium         || Math
 402 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [C++](./C++/remove-k-digits.cpp) [Python](./Python/remove-k-digits.py) | _O(n)_ | _O(n)_ | Medium | LintCode |
 435 | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | [C++](./C++/non-overlapping-intervals.cpp) [Python](./Python/non-overlapping-intervals.py) | _O(nlogn)_ | _O(1)_ | Medium | |
+452 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [C++](./C++/minimum-number-of-arrows-to-burst-balloons.cpp) [Python](./Python/minimum-number-of-arrows-to-burst-balloons.py) | _O(nlogn)_ | _O(1)_ | Medium | |
+455 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | [C++](./C++/assign-cookies.cpp) [Python](./Python/assign-cookies.py) | _O(nlogn)_ | _O(1)_ | Easy | |
 
 ---
 ## Design
@@ -556,6 +581,7 @@ I'll keep updating for full summary and better solutions. Stay tuned for updates
 380| [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [C++](./C++/insert-delete-getrandom-o1.cpp) [Python](./Python/insert-delete-getrandom-o1.py) | _O(1)_ | _O(n)_| Hard || |
 381| [Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/) | [C++](./C++/insert-delete-getrandom-o1-duplicates-allowed.cpp) [Python](./Python/insert-delete-getrandom-o1-duplicates-allowed.py) | _O(1)_ | _O(n)_| Hard || |
 432| [All O\`one Data Structure](https://leetcode.com/problems/all-oone-data-structure/) | [C++](./C++/all-oone-data-structure.cpp) [Python](./Python/all-oone-data-structure.py) | _O(1)_ | _O(n)_| Hard || |
+460| [LFU Cache](https://leetcode.com/problems/lfu-cache/) | [C++](./C++/lfu-cache.cpp) [Python](./Python/lfu-cache.py) | _O(1)_ | _O(k)_| Hard || |
 
 ## SQL
   #  | Title           |  Solution       |  Time           | Space           | Difficulty    | Tag          | Note
