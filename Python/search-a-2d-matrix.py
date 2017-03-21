@@ -24,6 +24,9 @@ class Solution(object):
         :type target: int
         :rtype: bool
         """
+        if not matrix:
+            return False
+        
         m, n = len(matrix), len(matrix[0])
         left, right = 0, m * n
         while left < right:
